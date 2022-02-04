@@ -1,0 +1,2088 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.min.css?_v=20220204124523">
+        <link rel="stylesheet" href="files/swiper-bundle.min.css?_v=20220204124523">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js?_v=20220204124523"></script>
+        <script src="https://unpkg.com/swiper@8.0.3/swiper-bundle.min.js?_v=20220204124523"></script>
+        <title>title</title>
+    </head>
+
+    <div class="preloader">
+      <div class="loader_text">ЗАГРУЗКА</div>
+      <div class="t"></div>
+      <div class="loader"></div>
+      </div>
+
+<body>
+  <div id="cursor">
+		<div class="cursor__circle"></div>
+	  </div>
+<div class="wrapper">
+    <header class="header">
+    <div class="header-wrapper">
+    <div class="header-conteiner conteiner">
+        <a href="/" class="header-logo" cursor-mix="" target="" cursor-class="arrow_link">
+            <svg class="R" width="79" height="49" viewBox="0 0 79 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M77.8721 35.1519C77.5052 34.9826 76.828 34.8132 76.2166 35.3776C73.8934 37.5504 68.2404 41.5855 60.2171 41.8583C42.8068 42.4226 26.9296 30.1479 26.0455 28.8311C33.7395 27.2603 37.3702 23.3192 38.339 18.494C39.3925 13.2643 37.135 8.16627 32.9682 5.25044C30.993 3.87717 26.243 0.575677 16.1128 0.0301338C12.8301 -0.139173 8.08015 0.415787 5.85095 1.42222C0.423732 3.87717 -0.864872 8.5143 0.508392 12.1356C1.20443 13.9697 2.9163 14.9574 4.39303 14.9574C5.56877 14.9574 5.72867 14.2519 5.72867 14.2519C4.20491 13.5088 2.49304 12.3425 2.96334 9.98161C3.61235 6.65192 9.98956 6.0029 14.6925 6.0029C20.148 6.0029 24.8603 6.85884 28.6791 9.00339C31.6514 10.6776 33.6454 12.493 34.1251 15.296C35.4984 23.2345 27.588 26.5078 24.7192 26.5831C24.7192 26.5831 28.9613 17.2618 28.6509 13.7252C28.5004 11.9662 26.544 11.0163 24.39 11.0163C23.6093 16.2554 18.9346 30.3642 13.6861 38.0301C13.6861 38.0301 14.4009 39.0929 16.5549 38.4439C20.2044 37.3528 23.2143 29.8939 23.2143 29.8939C32.7519 39.2998 46.5503 46.1474 51.1687 47.2761C55.0627 48.2355 61.0449 48.8281 65.4562 47.2573C71.9369 44.9528 77.6839 38.6038 78.5399 36.384C78.8033 35.6598 78.126 35.2741 77.8721 35.1519Z" fill="white"/>
+                </svg>
+            <svg class="L" width="124" height="38" viewBox="0 0 124 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60.9378 14.7263C62.264 13.3531 62.9131 10.0328 58.6616 10.2774C57.2131 10.362 54.5888 11.0863 53.7893 13.6353C53.2626 15.3189 53.7235 16.7392 54.0527 17.9338C52.8299 18.959 51.8893 19.7303 51.0804 20.3417C48.8136 22.0441 47.4403 22.8907 46.4057 22.8907C45.2864 22.9001 46.3116 19.1471 48.1834 16.5417C49.6319 15.4506 50.5161 13.8516 50.422 12.958C50.2903 11.5001 48.9923 10.8981 47.6472 10.8887C47.1487 10.8887 45.4557 15.159 44.1765 17.7362C42.3329 20.6239 40.4705 22.8343 39.1161 22.8343C38.2884 22.8343 38.373 21.4516 39.0314 20.1536C40.1695 18.959 40.9973 17.7362 40.9408 16.9462C40.8562 15.9867 39.6899 15.2907 38.674 15.4506C37.9968 16.6546 35.3725 22.8907 33.0869 22.8907C31.8359 22.8907 31.977 19.8714 33.9804 17.1154C36.3695 13.8234 39.229 13.3249 41.4017 14.51C42.3705 11.8764 40.5552 10.4843 38.6646 10.4655C35.871 10.4466 32.1839 12.5348 28.9483 18.9308C27.9983 20.4169 25.2047 23.6808 24.4899 22.7308C23.3518 21.207 26.4934 15.1402 29.0612 13.2684C28.7037 12.2338 27.9983 10.663 26.7191 10.4843C25.2612 10.2774 21.2354 13.7105 18.724 17.7174L18.5171 17.6328C19.0344 16.316 19.9844 14.1808 21.6493 12.4501C21.3389 11.4249 20.3607 10.5031 19.185 10.4937C17.285 10.4843 15.3567 16.8427 14.6231 18.8273C12.977 21.7338 8.82902 23.6902 6.79734 23.1446C5.56517 22.806 5.41467 21.2729 5.41467 21.2729C8.1612 21.1788 10.2399 19.6739 11.7731 17.7457C13.2028 15.9397 13.88 13.8328 13.3251 12.0739C12.9394 10.8135 11.1241 9.83526 9.35575 10.2867C5.88497 11.1803 3.46765 15.5541 2.56468 18.7145C1.9627 18.5546 1.54884 18.1783 1.28547 17.8867C0.354287 18.4323 0.95627 20.163 2.24488 20.6991C2.06617 22.4204 2.16022 27.0857 5.96962 27.1139C8.62209 27.1328 12.3468 24.5649 13.5414 22.9001C12.8454 25.4303 14.7171 27.1892 15.8176 26.8788C16.3726 26.6719 16.4478 25.7595 16.6736 25.1669C18.4325 20.4357 20.7651 17.0496 23.3894 15.3753C23.5023 15.3001 23.6904 15.5447 23.6057 15.6575C22.4112 17.407 19.8622 21.5362 20.4453 24.6026C20.7181 26.004 21.9127 27.0857 23.1448 27.0857C24.8285 27.1045 27.7349 23.9818 28.3369 22.9942C28.2146 25.1951 28.9859 27.0763 30.6037 27.0857C32.8988 27.1045 34.8176 24.3486 35.5795 23.2105C35.1938 25.2422 36.125 27.0763 37.5923 27.0857C39.5958 27.1045 41.5052 24.0947 42.3423 23.1823C41.9661 24.6496 42.6151 27.0763 44.5339 27.0857C45.4745 27.0951 46.7067 26.4273 47.9482 25.4961C48.3433 25.1951 49.1428 24.5179 50.0081 23.7937C49.5567 25.0541 50.5067 26.9164 52.4631 27.2362C55.172 27.6595 58.718 26.1545 58.8779 22.6367C58.9532 20.9154 57.9938 18.8932 57.6364 17.5387C58.7557 16.6358 60.364 15.3283 60.9378 14.7263ZM9.98596 13.3531C10.0894 13.3155 10.2023 13.2966 10.3058 13.2966C10.5315 13.2966 10.7008 13.4095 10.6914 13.6823C10.6914 15.5259 7.87901 18.6298 5.6404 18.959C6.12011 16.8521 8.35874 13.9362 9.98596 13.3531ZM55.0215 22.2511C54.7769 23.4456 54.0433 23.8971 52.8958 24.0006C52.2468 24.0664 51.3061 23.7372 51.2027 22.8625C51.2027 22.8343 51.1839 22.8249 51.1651 22.806C51.9175 22.157 52.5948 21.5738 52.9051 21.3105C53.3943 20.8872 53.9398 20.4075 54.5982 19.8149C54.8052 20.511 55.1532 21.6021 55.0215 22.2511ZM57.1472 15.7798C56.9967 14.4818 57.6269 13.5882 58.1443 13.0991C58.6145 12.6759 59.4893 12.5536 59.5834 13.1744C59.7056 14.0491 57.674 15.366 57.1472 15.7798Z" fill="white"/>
+                <path d="M123.233 19.439C120.035 23.7375 114.194 24.932 113.348 22.3172C116.734 19.7776 120.007 16.2034 120.609 13.8895C121.136 11.9048 119.518 10.6068 117.646 10.6068C113.621 10.6068 110.056 16.0246 109.868 21.6212C109.868 21.6212 108.118 23.5588 105.343 23.54C103.697 23.5212 103.105 22.289 103.011 21.1509C102.681 17.0311 107.018 12.8925 108.156 13.7202C108.692 14.1717 107.761 15.639 106.764 16.4855C108.033 17.7742 109.708 15.9212 110.338 14.8207C110.987 13.6826 111.128 11.9989 110.225 11.1712C109.745 10.7291 108.927 10.5222 108.109 10.5222C104.102 10.5222 99.9632 14.9242 99.3048 19.9187C98.1008 21.4895 96.1256 23.5588 95.533 22.7687C94.3949 21.2731 97.5082 15.2628 100.048 13.4098C99.6998 12.3845 98.9944 10.8232 97.734 10.6539C96.4736 10.4846 93.2662 13.0524 90.8206 16.3538L90.5667 16.0811C93.4261 11.8954 90.7454 10.1365 89.1275 10.9078C88.582 13.0618 87.3781 15.6108 86.3152 18.141C84.5657 20.8405 82.8068 22.8816 81.5088 22.8816C80.681 22.8816 80.7657 21.5177 81.4241 20.2385C82.5434 19.0628 83.3711 17.84 83.3053 17.0593C83.2206 16.1093 82.0637 15.4227 81.0667 15.5826C80.3894 16.7677 77.7934 22.938 75.5454 22.938C74.3038 22.938 74.4355 19.9563 76.4201 17.2192C78.7904 13.9648 81.5934 13.2875 83.7474 14.4539C84.7068 11.8578 82.9196 10.588 81.0385 10.4563C79.2231 10.3341 77.0692 11.19 75.1974 12.836C75.1692 12.8549 75.1504 12.8737 75.1127 12.9019C72.2722 15.2816 70.5038 16.7677 67.7103 18.1222C67.494 17.4167 67.1459 15.94 67.2776 15.291C67.5222 14.087 68.2558 13.6261 69.4033 13.5133C70.0524 13.4568 71.0306 13.8519 71.0682 14.3316C71.1058 14.6702 72.0182 14.0964 72.2251 13.4944C72.5825 12.3563 71.7925 10.5692 69.8266 10.2494C67.1177 9.81674 63.5717 11.3405 63.4118 14.8865C63.3271 16.636 64.3336 18.1974 64.691 19.5519C63.4588 20.3137 61.9256 21.0756 61.239 21.5553C59.687 22.6652 59.5836 24.2736 59.9598 25.2989C60.4489 26.6345 61.9633 27.3494 63.2519 27.3588L63.6281 27.3682C64.9355 27.3682 67.7009 26.5499 68.491 23.9726C69.0177 22.2702 68.6603 21.085 68.3311 19.8811C69.5162 19.2979 70.6355 18.6395 71.6137 18.0093C71.5009 18.3103 71.3974 18.6207 71.2939 18.9405C70.9741 19.787 70.5321 21.6494 70.6543 23.0979C70.692 25.139 71.5479 27.0672 73.0434 27.086C75.3197 27.1048 77.2197 24.3771 77.9721 23.2484C77.5865 25.2519 78.5083 27.086 79.9662 27.086C81.4617 27.086 82.9573 25.788 84.5751 23.8033C84.5187 26.0325 85.9484 27.133 86.9266 26.8697C87.4721 26.6627 87.5568 25.7598 87.7731 25.1766C89.5226 20.4925 91.8176 17.1533 94.4231 15.4979C94.536 15.4227 94.7241 15.6672 94.6394 15.7801C93.4543 17.5014 90.9429 21.5929 91.5167 24.6217C91.7894 26.0043 92.9652 27.0766 94.1785 27.0766C95.8434 27.086 98.7216 24.0103 99.3142 23.0321L99.3236 23.0038C99.7939 25.8726 101.957 27.0766 104.177 27.0766C107.337 27.0766 110.366 24.1231 110.366 24.1231C110.366 24.1231 111.175 27.133 115.314 27.1612C118.389 27.18 121.578 24.5652 123.205 22.4677C124.193 21.2355 124.325 20.2573 123.233 19.439ZM63.9761 24.0855C63.4964 24.3959 62.3677 24.4994 62.0103 23.9821C61.794 23.6717 61.8034 23.2484 62.4618 22.7969C62.9697 22.4583 64.4464 21.8093 65.0108 21.4895C65.0578 23.0885 64.5781 23.6905 63.9761 24.0855ZM117.74 13.5791C118.672 14.5855 114.232 18.9123 112.783 19.7964C113.113 16.0811 116.659 12.7702 117.74 13.5791Z" fill="white"/>
+                <path d="M51.0993 9.05491C51.626 6.34601 53.9022 3.50543 56.3478 2.1886C55.9057 0.975239 55.0216 0.222757 53.9775 0.0346389C51.2874 -0.454469 49.077 4.35197 49.2557 7.13613C49.3404 8.49058 50.2716 9.37471 51.0993 9.05491Z" fill="white"/>
+                <path d="M54.6357 35.4292L54.4381 34.0465L53.6387 35.4292H54.6357ZM54.8896 36.9436C54.852 36.9436 54.8238 36.9153 54.8238 36.8871L54.7297 36.2945H53.1777L52.8109 36.9153C52.8015 36.9342 52.7733 36.9529 52.7545 36.9529H51.7857C51.7575 36.9529 51.7386 36.9436 51.7292 36.9153C51.7198 36.8965 51.7198 36.8683 51.7292 36.8495L54.0619 33.0025C54.0713 32.9837 54.0901 32.9648 54.1183 32.9648H55.1436C55.1812 32.9648 55.2094 32.9931 55.2094 33.0213L55.8396 36.8683C55.8396 36.8871 55.8396 36.9059 55.8208 36.9247C55.8114 36.9341 55.7926 36.9436 55.7738 36.9436H54.8896Z" fill="white"/>
+                <path d="M61.4367 34.714C61.8223 34.714 62.0669 34.5071 62.0669 34.1873C62.0669 33.9615 61.8505 33.811 61.6436 33.811H60.8723L60.6748 34.714H61.4367ZM61.5213 36.9432C61.4837 36.9432 61.4649 36.9244 61.4555 36.8962L61.0134 35.5793H60.4867L60.1951 36.8868C60.1857 36.9244 60.1575 36.9432 60.1293 36.9432H59.311C59.2922 36.9432 59.2733 36.9338 59.2639 36.915C59.2451 36.8962 59.2451 36.8773 59.2451 36.8585L60.0916 33.0115C60.1011 32.9833 60.1293 32.9551 60.1575 32.9551H61.8035C62.4149 32.9551 63.0639 33.3595 63.0639 34.1026C63.0639 34.7798 62.6218 35.3348 61.9916 35.4947L62.4996 36.8491C62.509 36.868 62.4995 36.8962 62.4901 36.915C62.4807 36.9338 62.4525 36.9432 62.4337 36.9432H61.5213Z" fill="white"/>
+                <path d="M67.0234 36.9433C66.9952 36.9433 66.9764 36.9339 66.967 36.9151C66.9576 36.8963 66.9482 36.8775 66.9576 36.8586L67.6254 33.8111H66.5907C66.5625 33.8111 66.5437 33.8017 66.5343 33.7829C66.5249 33.7641 66.5155 33.7453 66.5249 33.7265L66.6848 33.0022C66.6942 32.974 66.7224 32.9458 66.7506 32.9458H69.817C69.8358 32.9458 69.8546 32.9552 69.8734 32.974C69.8828 32.9928 69.8828 33.0116 69.8828 33.0304L69.7323 33.7547C69.7229 33.7923 69.6947 33.8111 69.6665 33.8111H68.5942L67.917 36.8869C67.9076 36.9245 67.8793 36.9433 67.8511 36.9433H67.0234Z" fill="white"/>
+                <path d="M79.308 37.0089C78.1511 37.0089 77.3516 36.2753 77.3516 35.2124C77.3516 33.8673 78.3486 32.8892 79.7313 32.8892C80.4743 32.8892 81.0857 33.256 81.3773 33.8768C81.3867 33.8956 81.3867 33.9144 81.3773 33.9332C81.3679 33.952 81.3585 33.9614 81.3397 33.9708L80.5872 34.3C80.5778 34.3 80.5684 34.3 80.559 34.3C80.5496 34.3 80.5402 34.3 80.5402 34.3C80.5213 34.2906 80.5025 34.2812 80.5025 34.2624C80.3803 33.9614 80.0228 33.7545 79.6184 33.7545C78.9129 33.7545 78.3392 34.3847 78.3392 35.1654C78.3392 35.7391 78.753 36.153 79.355 36.153C79.6184 36.153 79.8629 36.0589 80.0793 35.8708L80.1451 35.5322H79.2045C79.1857 35.5322 79.1669 35.5228 79.1481 35.504C79.1387 35.4852 79.1293 35.4664 79.1387 35.4475L79.2986 34.7233C79.2986 34.6951 79.3362 34.6669 79.3644 34.6669H81.208C81.2268 34.6669 81.2456 34.6763 81.2644 34.6951C81.2832 34.7139 81.2832 34.7327 81.2832 34.7515L80.9446 36.2471C80.5308 36.755 79.957 37.0089 79.308 37.0089Z" fill="white"/>
+                <path d="M86.8981 34.714C87.2837 34.714 87.5283 34.5071 87.5283 34.1873C87.5283 33.9615 87.312 33.811 87.1144 33.811H86.3432L86.1456 34.714H86.8981ZM86.9733 36.9432C86.9451 36.9432 86.9169 36.9244 86.9075 36.8962L86.4748 35.5793H85.9387L85.6565 36.8868C85.6565 36.9244 85.6189 36.9432 85.5907 36.9432H84.7724C84.7535 36.9432 84.7347 36.9338 84.7159 36.915C84.7065 36.8962 84.6971 36.8773 84.7065 36.8585L85.5531 33.0115C85.5531 32.9833 85.5907 32.9551 85.6189 32.9551H87.2555C87.8669 32.9551 88.5159 33.3595 88.5159 34.1026C88.5159 34.7798 88.0832 35.3348 87.4436 35.4947L87.9516 36.8491C87.961 36.868 87.961 36.8962 87.9421 36.915C87.9327 36.9338 87.9045 36.9432 87.8857 36.9432H86.9733Z" fill="white"/>
+                <path d="M93.8965 33.7545C93.191 33.7545 92.6267 34.3753 92.6267 35.1654C92.6267 35.7485 93.0405 36.153 93.6425 36.153C94.348 36.153 94.9029 35.5322 94.9029 34.7421C94.9123 34.1495 94.5079 33.7545 93.8965 33.7545ZM93.6049 37.0089C92.448 37.0089 91.6484 36.2753 91.6484 35.2124C91.6484 33.9144 92.6549 32.8892 93.9529 32.8892C95.1004 32.8892 95.9093 33.6228 95.9093 34.6763C95.8999 35.9837 94.8935 37.0089 93.6049 37.0089Z" fill="white"/>
+                <path d="M101.036 37.0094C99.9444 37.0094 99.2954 36.4826 99.2954 35.5985C99.2954 35.5138 99.3142 35.3822 99.3236 35.3257L99.8316 33.0119C99.841 32.9836 99.8692 32.9648 99.8974 32.9648H100.725C100.744 32.9648 100.772 32.9742 100.782 32.9931C100.791 33.0119 100.8 33.0307 100.791 33.0495L100.292 35.3445C100.283 35.3728 100.274 35.4386 100.274 35.5233C100.274 35.9183 100.575 36.1723 101.036 36.1723C101.534 36.1723 101.835 35.8995 101.957 35.3257L102.465 33.0307C102.475 33.0025 102.503 32.9836 102.531 32.9836H103.368C103.387 32.9836 103.406 32.9931 103.425 33.0119C103.434 33.0307 103.443 33.0495 103.434 33.0683L102.917 35.3822C102.672 36.4827 102.07 37.0094 101.036 37.0094Z" fill="white"/>
+                <path d="M108.532 34.714C108.89 34.714 109.144 34.4977 109.144 34.1779C109.144 33.9615 108.984 33.811 108.73 33.811H107.958L107.761 34.714H108.532ZM106.388 36.9432C106.369 36.9432 106.341 36.9338 106.331 36.915C106.322 36.8962 106.312 36.8773 106.322 36.8585L107.178 33.0115C107.178 32.9833 107.206 32.9551 107.234 32.9551H108.927C109.623 32.9551 110.141 33.4348 110.141 34.0838C110.141 34.7987 109.623 35.5699 108.485 35.5699H107.573L107.281 36.8774C107.272 36.9056 107.244 36.9338 107.215 36.9338H106.388V36.9432Z" fill="white"/>
+                </svg>
+        </a>
+        <div class="header-link">
+            <a href="tel:+74956421511" class="header-phone" cursor-mix="" target="" cursor-class="arrow_link">
+                +7 (495) 642-15-11
+            </a>
+            <a href="hr@renart.ru" class="header-mail" cursor-mix="" target="" cursor-class="arrow_link">
+                hr@renart.ru
+            </a>
+            <a href="/" class="header-mail-icon" cursor-mix="" target="" cursor-class="arrow_link">
+                <svg width="27" height="29" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.25 10.7505V10.6284L26.1537 10.5533L13.6398 0.802796L13.486 0.682933L13.3323 0.802966L0.905909 10.5075L0.904443 10.5086L0.847591 10.5523L0.75 10.6274V10.7505V28V28.25H1H26H26.25V28V10.7505ZM13.4864 1.69978L25.1613 10.796L13.4985 19.944L1.83838 10.7958L13.4864 1.69978ZM13.6528 20.8442L25.4431 11.5933V27.4509L1.55694 27.4451V11.5933L13.2471 20.7649L13.3403 20.8411L13.4953 20.9678L13.6528 20.8442Z" fill="#66E9E2" stroke="#66E9E2" stroke-width="0.5"/>
+                    </svg> 
+            </a>
+        </div>
+    </div>
+        </div>
+</header>
+    <div class="conteiner">
+    <canvas id="c"></canvas>
+    <div class="sidebar">
+    <nav class="menu">
+        <div class="menu-block">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="" class="menu-link menu__link" cursor-mix="" cursor-class="arrow_link">Вакансии</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link menu__link" cursor-mix="" cursor-class="arrow_link">Работа<br>в команде</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link menu__link" cursor-mix="" cursor-class="arrow_link">О нас</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link menu__link" cursor-mix="" cursor-class="arrow_link">Контакты</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link menu__link" cursor-mix="" cursor-class="arrow_link">Заявка</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+            <div class="body-content">
+            <section class="block-team">
+                <div class="title-block">
+                    <h2 class="top-title">Стань частью</h2>
+                    <h1 class="title">Команды<br>Renaissance</h1>
+                    <div class="title-flex">
+                        <div class="image-title">
+                            <picture><source srcset="img/hh.webp"type="image/webp"><img src="img/hh.png" alt="hh"></picture>
+                        </div>
+                        <div class="text-title">Мы постоянно повышаем профессиональный уровень подготовки кадров путем внедрения современных технологий и оборудования, а также внедрением передовых методик и стандартов менеджмента качества.
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="models-wrapper">
+<div class="section-boxs">
+    <div class="draco draco-w" cursor-class="arrow">
+        <div class="text">
+            <div class="svg_p">
+                <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.4999 0C2.91003 0 0 2.81996 0 6.29848C0 9.777 6.4999 19 6.4999 19C6.4999 19 13 9.777 13 6.29848C13 2.81996 10.0898 0 6.4999 0ZM6.5003 9.52329C4.55691 9.52329 2.97594 7.99097 2.97594 6.10824C2.97594 4.22513 4.55691 2.6932 6.5003 2.6932C8.4435 2.6932 10.0245 4.22513 10.0245 6.10824C10.0245 7.99097 8.4433 9.52329 6.5003 9.52329Z" fill="#66E9E2"/>
+                </svg>
+                <p class="sub_title">Москва</p>
+            </div>
+            <p class="title-cart">SMM<br>специалист</p>
+            <p class="sub_title_text">человек который может увеличивать<br>чек у текущих клиентов</p>
+            <div class="arrow-image">
+                <picture><source srcset="img/arrow.webp"type="image/webp"><img src="img/arrow.png" style="width: 100%;" alt="arrow"></picture>
+            </div>
+            </div>
+            <span id="load_1" class="c diagram"></span>
+            <picture><source srcset="img/bg_1.webp"type="image/webp"><img class="bg_1-image" src="img/bg_1.png" alt="bg_1"></picture>
+    </div>
+    <div class="draco-2 draco-w" cursor-class="arrow">
+        <div class="text">
+            <div class="svg_p">
+                <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.4999 0C2.91003 0 0 2.81996 0 6.29848C0 9.777 6.4999 19 6.4999 19C6.4999 19 13 9.777 13 6.29848C13 2.81996 10.0898 0 6.4999 0ZM6.5003 9.52329C4.55691 9.52329 2.97594 7.99097 2.97594 6.10824C2.97594 4.22513 4.55691 2.6932 6.5003 2.6932C8.4435 2.6932 10.0245 4.22513 10.0245 6.10824C10.0245 7.99097 8.4433 9.52329 6.5003 9.52329Z" fill="#66E9E2"/>
+                </svg>
+                <p class="sub_title">Москва</p>
+            </div>
+            <p class="title-cart">SMM<br>специалист</p>
+            <p class="sub_title_text">человек который может увеличивать<br>чек у текущих клиентов</p>
+            <div class="arrow-image">
+                <picture><source srcset="img/arrow.webp"type="image/webp"><img src="img/arrow.png" style="width: 100%;" alt="arrow"></picture>
+            </div>
+            </div>
+            <span id="load_2" class="c diagram"></span>
+            <picture><source srcset="img/bg_1.webp"type="image/webp"><img class="bg_1-image" src="img/bg_1.png" alt="bg_1"></picture>
+    </div>
+    <div class="draco-3 draco-w" cursor-class="arrow">
+        <div class="text">
+            <div class="svg_p">
+                <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.4999 0C2.91003 0 0 2.81996 0 6.29848C0 9.777 6.4999 19 6.4999 19C6.4999 19 13 9.777 13 6.29848C13 2.81996 10.0898 0 6.4999 0ZM6.5003 9.52329C4.55691 9.52329 2.97594 7.99097 2.97594 6.10824C2.97594 4.22513 4.55691 2.6932 6.5003 2.6932C8.4435 2.6932 10.0245 4.22513 10.0245 6.10824C10.0245 7.99097 8.4433 9.52329 6.5003 9.52329Z" fill="#66E9E2"/>
+                </svg>
+                <p class="sub_title">Москва</p>
+            </div>
+            <p class="title-cart">SMM<br>специалист</p>
+            <p class="sub_title_text">человек который может увеличивать<br>чек у текущих клиентов</p>
+            <div class="arrow-image">
+                <picture><source srcset="img/arrow.webp"type="image/webp"><img src="img/arrow.png" style="width: 100%;" alt="arrow"></picture>
+            </div>
+            </div>
+            <span id="load_3" class="c diagram"></span>
+            <picture><source srcset="img/bg_1.webp"type="image/webp"><img class="bg_1-image" src="img/bg_1.png" alt="bg_1"></picture>
+    </div>
+    <div class="draco-4 draco-w" cursor-class="arrow">
+        <div class="text">
+            <div class="svg_p">
+                <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.4999 0C2.91003 0 0 2.81996 0 6.29848C0 9.777 6.4999 19 6.4999 19C6.4999 19 13 9.777 13 6.29848C13 2.81996 10.0898 0 6.4999 0ZM6.5003 9.52329C4.55691 9.52329 2.97594 7.99097 2.97594 6.10824C2.97594 4.22513 4.55691 2.6932 6.5003 2.6932C8.4435 2.6932 10.0245 4.22513 10.0245 6.10824C10.0245 7.99097 8.4433 9.52329 6.5003 9.52329Z" fill="#66E9E2"/>
+                </svg>
+                <p class="sub_title">Москва</p>
+            </div>
+            <p class="title-cart">SMM<br>специалист</p>
+            <p class="sub_title_text">человек который может увеличивать<br>чек у текущих клиентов</p>
+            <div class="arrow-image">
+                <picture><source srcset="img/arrow.webp"type="image/webp"><img src="img/arrow.png" style="width: 100%;" alt="arrow"></picture>
+            </div>
+            </div>
+            <span id="load_4" class="c diagram"></span>
+            <picture><source srcset="img/bg_1.webp"type="image/webp"><img class="bg_1-image" src="img/bg_1.png" alt="bg_1"></picture>
+    </div>
+    <div class="draco-5 draco-w" cursor-class="arrow">
+        <div class="text">
+            <div class="svg_p">
+                <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.4999 0C2.91003 0 0 2.81996 0 6.29848C0 9.777 6.4999 19 6.4999 19C6.4999 19 13 9.777 13 6.29848C13 2.81996 10.0898 0 6.4999 0ZM6.5003 9.52329C4.55691 9.52329 2.97594 7.99097 2.97594 6.10824C2.97594 4.22513 4.55691 2.6932 6.5003 2.6932C8.4435 2.6932 10.0245 4.22513 10.0245 6.10824C10.0245 7.99097 8.4433 9.52329 6.5003 9.52329Z" fill="#66E9E2"/>
+                </svg>
+                <p class="sub_title">Москва</p>
+            </div>
+            <p class="title-cart">SMM<br>специалист</p>
+            <p class="sub_title_text">человек который может увеличивать<br>чек у текущих клиентов</p>
+            <div class="arrow-image">
+                <picture><source srcset="img/arrow.webp"type="image/webp"><img src="img/arrow.png" style="width: 100%;" alt="arrow"></picture>
+            </div>
+            </div>
+            <span id="load_5" class="c diagram"></span>
+            <picture><source srcset="img/bg_1.webp"type="image/webp"><img class="bg_1-image" src="img/bg_1.png" alt="bg_1"></picture>
+    </div>
+    <div class="draco-6 draco-w" cursor-class="arrow">
+        <div class="text">
+            <div class="svg_p">
+                <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.4999 0C2.91003 0 0 2.81996 0 6.29848C0 9.777 6.4999 19 6.4999 19C6.4999 19 13 9.777 13 6.29848C13 2.81996 10.0898 0 6.4999 0ZM6.5003 9.52329C4.55691 9.52329 2.97594 7.99097 2.97594 6.10824C2.97594 4.22513 4.55691 2.6932 6.5003 2.6932C8.4435 2.6932 10.0245 4.22513 10.0245 6.10824C10.0245 7.99097 8.4433 9.52329 6.5003 9.52329Z" fill="#66E9E2"/>
+                </svg>
+                <p class="sub_title">Москва</p>
+            </div>
+            <p class="title-cart">SMM<br>специалист</p>
+            <p class="sub_title_text">человек который может увеличивать<br>чек у текущих клиентов</p>
+            <div class="arrow-image">
+                <picture><source srcset="img/arrow.webp"type="image/webp"><img src="img/arrow.png" style="width: 100%;" alt="arrow"></picture>
+            </div>
+            </div>
+            <span id="load_6" class="c diagram"></span>
+            <picture><source srcset="img/bg_1.webp"type="image/webp"><img class="bg_1-image" src="img/bg_1.png" alt="bg_1"></picture> 
+    </div>
+    <div class="draco-7 draco-w" cursor-class="arrow">
+        <div class="text">
+            <div class="svg_p">
+                <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.4999 0C2.91003 0 0 2.81996 0 6.29848C0 9.777 6.4999 19 6.4999 19C6.4999 19 13 9.777 13 6.29848C13 2.81996 10.0898 0 6.4999 0ZM6.5003 9.52329C4.55691 9.52329 2.97594 7.99097 2.97594 6.10824C2.97594 4.22513 4.55691 2.6932 6.5003 2.6932C8.4435 2.6932 10.0245 4.22513 10.0245 6.10824C10.0245 7.99097 8.4433 9.52329 6.5003 9.52329Z" fill="#66E9E2"/>
+                </svg>
+                <p class="sub_title">Москва</p>
+            </div>
+            <p class="title-cart">SMM<br>специалист</p>
+            <p class="sub_title_text">человек который может увеличивать<br>чек у текущих клиентов</p>
+            <div class="arrow-image">
+                <picture><source srcset="img/arrow.webp"type="image/webp"><img src="img/arrow.png" style="width: 100%;" alt="arrow"></picture>
+            </div>
+            </div>
+            <span id="load_7" class="c diagram"></span>
+            <picture><source srcset="img/bg_1.webp"type="image/webp"><img class="bg_1-image" src="img/bg_1.png" alt="bg_1"></picture>
+    </div>
+    <div class="draco-8 draco-w" cursor-class="arrow">
+        <div class="text">
+            <div class="svg_p">
+                <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.4999 0C2.91003 0 0 2.81996 0 6.29848C0 9.777 6.4999 19 6.4999 19C6.4999 19 13 9.777 13 6.29848C13 2.81996 10.0898 0 6.4999 0ZM6.5003 9.52329C4.55691 9.52329 2.97594 7.99097 2.97594 6.10824C2.97594 4.22513 4.55691 2.6932 6.5003 2.6932C8.4435 2.6932 10.0245 4.22513 10.0245 6.10824C10.0245 7.99097 8.4433 9.52329 6.5003 9.52329Z" fill="#66E9E2"/>
+                </svg>
+                <p class="sub_title">Москва</p>
+            </div>
+            <p class="title-cart">SMM<br>специалист</p>
+            <p class="sub_title_text">человек который может увеличивать<br>чек у текущих клиентов</p>
+            <div class="arrow-image">
+                <picture><source srcset="img/arrow.webp"type="image/webp"><img src="img/arrow.png" style="width: 100%;" alt="arrow"></picture>
+            </div>
+            </div>
+            <span id="load_8" class="c diagram"></span>
+            <picture><source srcset="img/bg_1.webp"type="image/webp"><img class="bg_1-image" src="img/bg_1.png" alt="bg_1"></picture>
+    </div>
+</div>
+</section>
+            <section class="block-slider-title">
+                    <h2 class="top-title">Содействуем успеху</h2>
+                    <h1 class="title">Сотрудников</h1>
+            
+            <div class="main-conteiner">
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+				  <!-- Slides -->
+					<div class="swiper-slide"><picture><source srcset="img/1.webp"type="image/webp"><img src="img/1.png" alt="img_1"></picture></div>
+					<div class="swiper-slide"><picture><source srcset="img/2.webp"type="image/webp"><img src="img/2.png" alt="img_2"></picture></div>
+					<div class="swiper-slide"><picture><source srcset="img/3.webp"type="image/webp"><img src="img/3.png" alt="img_3"></picture></div>
+				</div>
+
+			  
+				<!-- If we need navigation buttons -->
+				<div class="bt-p bt-prev bt-prev-img" cursor-mix="" cursor-class="arrow_link"></div>
+				<div class="bt-n bt-next bt-next-img" cursor-mix="" cursor-class="arrow_link"></div>
+			  
+
+			  </div>
+						</div>
+          
+            <div class="block-slider-title-bottom">
+                <div class="slide-title-bottom">Обучение</div>
+                    <div class="text-title slide-text-bottom">Мы формируем долгосрочные отношения с людьмии компаниями: внутри коллектива, с клиентами и партнерами. Кусочек текста об обучении в компании.
+                    </div>
+                </div>
+              </section>
+                <section class="slider-2">
+<div class="main-conteiner-2">
+    <div class="swiper-2">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide">
+                <picture><source srcset="img/img-8.webp"type="image/webp"><img data-swiper-parallax="-23%" src="img/img-8.png" alt="img_1"></picture>
+            </div>
+            <div class="swiper-slide">
+                <picture><source srcset="img/img-7.webp"type="image/webp"><img data-swiper-parallax="-23%" src="img/img-7.png" alt="img_2"></picture>
+            </div>
+            <div class="swiper-slide">
+                <picture><source srcset="img/img-8.webp"type="image/webp"><img data-swiper-parallax="-23%" src="img/img-8.png" alt="img_3"></picture>
+            </div>
+        </div>
+
+      
+        <!-- If we need navigation buttons -->
+        <div class="bt-p bt-prev-2 bt-prev-img-2" cursor-mix="" cursor-class="arrow_link">
+            <svg width="57" height="32" viewBox="0 0 57 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M56.75 15.9206L0.972714 15.9207M17.9321 0.999997L0.499999 16.2217M17.9321 31L0.499999 15.7783" stroke="white"/>
+                </svg>
+        </div>
+        <div class="bt-n bt-next-2 bt-next-img-2" cursor-mix="" cursor-class="arrow_link">
+            <svg width="58" height="32" viewBox="0 0 58 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.500001 16.0794L56.2773 16.0793M39.3179 31L56.75 15.7783M39.3179 1L56.75 16.2217" stroke="white"/>
+                </svg>
+        </div>
+      
+
+      </div>
+                </div>
+                <div class="main-conteiner-3">
+                    <div class="swiper-3 ov">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="block-slider-2">
+                                    <div class="title-slider-2" data-swiper-parallax="-1000">Антон Сверчков</div>
+                                    <div class="flex-title-slider-2-text">
+                                        <div class="title-slider-2-text" data-swiper-parallax="-2000">Руководитель агентства</div>
+                                        <div class="slider-2-text" data-swiper-parallax="-4000">Мы формируем долгосрочные отношения с людьми и компаниями: внутри коллектива, с клиентами и партнерами </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="block-slider-2">
+                                    <div class="title-slider-2" data-swiper-parallax="-1000">Антон Сверчков</div>
+                                    <div class="flex-title-slider-2-text">
+                                        <div class="title-slider-2-text" data-swiper-parallax="-2000">Руководитель агентства</div>
+                                        <div class="slider-2-text" data-swiper-parallax="-4000">Мы формируем долгосрочные отношения с людьми и компаниями: внутри коллектива, с клиентами и партнерами </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="block-slider-2">
+                                    <div class="title-slider-2" data-swiper-parallax="-1000">Антон Сверчков</div>
+                                    <div class="flex-title-slider-2-text">
+                                        <div class="title-slider-2-text" data-swiper-parallax="-2000">Руководитель агентства</div>
+                                        <div class="slider-2-text" data-swiper-parallax="-4000">Мы формируем долгосрочные отношения с людьми и компаниями: внутри коллектива, с клиентами и партнерами </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+                
+                      </div>
+                                </div>
+                            </section>
+                <section class="block-agency">
+    <div class="title-block-agency">
+        <h2 class="top-title">Digital</h2>
+        <h1 class="title">Агентство</h1>
+        <div class="mr-190">
+            <div class="text-title mr-190">Мы постоянно повышаем профессиональный уровень подготовки кадров путем внедрения современных технологий и оборудования, а также внедрением передовых методик и стандартов менеджмента качества.
+            </div>
+        </div>
+    </div>
+<div class="layout-grid grid-3 g3-mt">
+    <div id="node-1"><picture><source srcset="img/img-1.webp"type="image/webp"><img src="img/img-1.png" alt=""></picture></div>
+    <div id="node-text-1">
+        <div class="node-title-sub">Компания<br>с пробегом,<br>но с одним<br>хозяином</div>
+        <div class="node-title-text-sub">Когда пробег —<br> достоинство</div>
+    </div>
+    <div id="node-2"><picture><source srcset="img/img-2.webp"type="image/webp"><img src="img/img-2.png" alt=""></picture></div>
+    <div id="node-text-2">
+        <div class="node-title">Управление</div>
+        <div class="node-title-text">Мы работаем с униканальными кампаниями, развиваемся с точки зрения технологий и новых рынков</div>
+    </div>
+    <div id="node-3"><picture><source srcset="img/img-3.webp"type="image/webp"><img src="img/img-3.png" alt=""></picture></div>
+    <div id="node-text-3">
+        <div class="node-title">Дизайн</div>
+        <div class="node-title-text">Мы работаем с униканальными кампаниями, развиваемся с точки зрения технологий и новых рынков</div>
+    </div>
+    <div id="node-4"><picture><source srcset="img/img-4.webp"type="image/webp"><img src="img/img-4.png" alt=""></picture></div>
+    <div id="node-text-4">
+        <div class="node-title">Разработка</div>
+        <div class="node-title-text">Мы работаем с униканальными кампаниями, развиваемся с точки зрения технологий и новых рынков</div>
+    </div>
+    <div id="node-5"><picture><source srcset="img/img-5.webp"type="image/webp"><img src="img/img-5.png" alt=""></picture></div>
+    <div id="node-text-5">
+        <div class="node-title">Хозяйство</div>
+        <div class="node-title-text">Мы работаем с униканальными кампаниями, развиваемся с точки зрения технологий и новых рынков</div>
+    </div>
+    <div id="node-6"><picture><source srcset="img/img-6.webp"type="image/webp"><img src="img/img-6.png" alt=""></picture></div>
+    <div id="node-text-6">
+        <div class="node-title">Маркетинг</div>
+        <div class="node-title-text">Мы работаем с униканальными кампаниями, развиваемся с точки зрения технологий и новых рынков</div>
+    </div>
+</div>
+</section>
+                <section class="block-clients">
+    <div class="title-block-clients">
+        <h1 class="title">Клиенты</h1>
+        <div class="mr-190">
+            <div class="text-title">Среди наших клиентов крупнейшие российскиеи зарубежные компании. Небольшой текст о клиентах.
+            </div>
+        </div>
+    </div>
+    <div class="slider-wrap">
+    <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <picture><source srcset="img/img-9.webp"type="image/webp"><img src="img/img-9.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-10.webp"type="image/webp"><img src="img/img-10.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-11.webp"type="image/webp"><img src="img/img-11.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-12.webp"type="image/webp"><img src="img/img-12.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-13.webp"type="image/webp"><img src="img/img-13.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-14.webp"type="image/webp"><img src="img/img-14.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-9.webp"type="image/webp"><img src="img/img-9.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-10.webp"type="image/webp"><img src="img/img-10.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-11.webp"type="image/webp"><img src="img/img-11.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-12.webp"type="image/webp"><img src="img/img-12.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-13.webp"type="image/webp"><img src="img/img-13.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-14.webp"type="image/webp"><img src="img/img-14.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-9.webp"type="image/webp"><img src="img/img-9.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-10.webp"type="image/webp"><img src="img/img-10.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-11.webp"type="image/webp"><img src="img/img-11.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-12.webp"type="image/webp"><img src="img/img-12.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-13.webp"type="image/webp"><img src="img/img-13.png" alt="" /></picture>
+          </div>
+          <div class="slide">
+            <picture><source srcset="img/img-14.webp"type="image/webp"><img src="img/img-14.png" alt="" /></picture>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+                <section class="block-history">
+    <div class="title-block-history">
+        <h1 class="title">История</h1>
+        <div class="mr-190">
+            <div class="text-title">Среди наших клиентов крупнейшие российские и зарубежные компании. Небольшой текст о клиентах.
+            </div>
+        </div>
+    </div>
+    <div class="slide-history">
+    <div class="main-conteiner-5">
+        <div class="swiper-4">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide op" cursor-mix="" cursor-class="arrow_link">
+              <div class="date date-1">
+                <div class="number">
+                    <svg width="280" height="76" viewBox="0 0 280 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text stroke="#66E9E2" xml:space="preserve" style="white-space: pre" font-family="GT Walsheim Pro" font-size="100" font-weight="900" letter-spacing="0em"><tspan x="2.30469" y="70.75">2009</tspan></text>
+                        </svg>
+                </div>
+                <hr class="line">
+          </div>
+        </div>
+            <div class="swiper-slide op" cursor-mix="" cursor-class="arrow_link">
+              <div class="date date-2">
+                <div class="number">
+                    <svg width="265" height="76" viewBox="0 0 265 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text stroke="#66E9E2" xml:space="preserve" style="white-space: pre" font-family="GT Walsheim Pro" font-size="100" font-weight="900" letter-spacing="0em"><tspan x="2.4707" y="70.75">2010</tspan></text>
+                        </svg>
+                        
+                </div>
+                <hr class="line">
+            </div>
+          </div>
+            <div class="swiper-slide op" cursor-mix="" cursor-class="arrow_link">
+              <div class="date date-3">
+                <div class="number">
+                    <svg width="240" height="76" viewBox="0 0 240 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text stroke="#66E9E2" xml:space="preserve" style="white-space: pre" font-family="GT Walsheim Pro" font-size="100" font-weight="900" letter-spacing="0em"><tspan x="0.46875" y="70.75">2011</tspan></text>
+                        </svg>
+                        
+                </div>
+                <hr class="line">
+            </div>
+          </div>
+          <div class="swiper-slide op" cursor-mix="" cursor-class="arrow_link">
+            <div class="date date-4">
+              <div class="number">
+                <svg width="260" height="76" viewBox="0 0 260 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text stroke="#66E9E2" xml:space="preserve" style="white-space: pre" font-family="GT Walsheim Pro" font-size="100" font-weight="900" letter-spacing="0em"><tspan x="1.24023" y="70.75">2012</tspan></text>
+                    </svg>
+              </div>
+              <hr class="line">
+       </div>
+      </div>
+         <div class="swiper-slide op" cursor-mix="" cursor-class="arrow_link">
+          <div class="date date-5">
+            <div class="number">
+                <svg width="260" height="76" viewBox="0 0 260 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text stroke="#66E9E2" xml:space="preserve" style="white-space: pre" font-family="GT Walsheim Pro" font-size="100" font-weight="900" letter-spacing="0em"><tspan x="2.26562" y="70.75">2013</tspan></text>
+                    </svg>
+            </div>
+            <hr class="line">
+         </div>
+        </div>
+         <div class="swiper-slide op" cursor-mix="" cursor-class="arrow_link">
+          <div class="date date-6">
+            <div class="number">
+                <svg width="260" height="76" viewBox="0 0 260 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text stroke="#66E9E2" xml:space="preserve" style="white-space: pre" font-family="GT Walsheim Pro" font-size="100" font-weight="900" letter-spacing="0em"><tspan x="1.19141" y="70.75">2014</tspan></text>
+                    </svg>
+            </div>
+            <hr class="line">
+         </div>
+        </div>
+        <div class="swiper-slide op" cursor-mix="" cursor-class="arrow_link">
+            <div class="date date-6">
+              <div class="number">
+                <svg width="260" height="76" viewBox="0 0 260 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text stroke="#66E9E2" xml:space="preserve" style="white-space: pre" font-family="GT Walsheim Pro" font-size="100" font-weight="900" letter-spacing="0em"><tspan x="1.875" y="70.75">2015</tspan></text>
+                    </svg>
+              </div>
+              <hr class="line">
+           </div>
+
+          </div>
+          <div class="swiper-slide op" cursor-mix="" cursor-class="arrow_link">
+            <div class="date date-6">
+              <div class="number">
+                <svg width="260" height="76" viewBox="0 0 260 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text stroke="#66E9E2" xml:space="preserve" style="white-space: pre" font-family="GT Walsheim Pro" font-size="100" font-weight="900" letter-spacing="0em"><tspan x="2.80273" y="70.75">2016</tspan></text>
+                    </svg>
+              </div>
+              <hr class="line">
+           </div>
+          </div>
+          <div class="swiper-slide op" cursor-mix="" cursor-class="arrow_link">
+            <div class="date date-6">
+              <div class="number">
+                <svg width="260" height="76" viewBox="0 0 260 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text stroke="#66E9E2" xml:space="preserve" style="white-space: pre" font-family="GT Walsheim Pro" font-size="100" font-weight="900" letter-spacing="0em"><tspan x="3.33984" y="70.75">2017</tspan></text>
+                    </svg>
+              </div>
+              <hr class="line">
+           </div>
+
+          </div>
+          <div class="swiper-slide op" cursor-mix="" cursor-class="arrow_link">
+            <div class="date date-6">
+              <div class="number">
+                <svg width="260" height="76" viewBox="0 0 260 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text stroke="#66E9E2" xml:space="preserve" style="white-space: pre" font-family="GT Walsheim Pro" font-size="100" font-weight="900" letter-spacing="0em"><tspan x="1.82617" y="70.75">2018</tspan></text>
+                    </svg>
+              </div>
+              <hr class="line">
+           </div>
+
+          </div>
+          <div class="swiper-slide op" cursor-mix="" cursor-class="arrow_link">
+            <div class="date date-6">
+              <div class="number">
+                <svg width="260" height="76" viewBox="0 0 260 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text stroke="#66E9E2" xml:space="preserve" style="white-space: pre" font-family="GT Walsheim Pro" font-size="100" font-weight="900" letter-spacing="0em"><tspan x="2.80273" y="70.75">2019</tspan></text>
+                    </svg>
+              </div>
+              <hr class="line">
+           </div>
+
+          </div>
+          <div class="swiper-slide op" cursor-mix="" cursor-class="arrow_link">
+            <div class="date date-6">
+              <div class="number">
+                <svg width="285" height="76" viewBox="0 0 285 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text stroke="#66E9E2" xml:space="preserve" style="white-space: pre" font-family="GT Walsheim Pro" font-size="100" font-weight="900" letter-spacing="0em"><tspan x="3.24219" y="70.75">2020</tspan></text>
+                    </svg>
+              </div>
+           </div>
+          </div>  
+      
+          
+        </div>
+          </div>
+              </div>
+
+    <div class="main-conteiner-6">
+      <div class="swiper-5">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide swiper-slide-2 op">
+            <div class="date-item">
+            <div class="slide-item date-item-1">
+              <div class="box-date">
+                <div class="date-title">
+                  <div class="date-title-text-up">10 м<sup>2</sup></div>
+                  <div class="date-title-text-bottom">мск</div>
+                </div>
+                <svg width="160" height="132" viewBox="0 0 160 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="159.5" y1="51" x2="159.5" y2="1" stroke="white"/>
+                  <line x1="110" y1="0.5" x2="160" y2="0.5" stroke="white"/>
+                  <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 160 81)" stroke="white"/>
+                  <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(1 0 0 -1 110 131)" stroke="white"/>
+                  <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 0 51)" stroke="white"/>
+                  <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-1 0 0 1 50 1)" stroke="white"/>
+                  <line x1="0.5" y1="81" x2="0.499998" y2="131" stroke="white"/>
+                  <line x1="50" y1="131.5" y2="131.5" stroke="white"/>
+                  </svg>
+              </div>
+              <div class="date-designe">
+                  <div class="designe-title-up">
+                    Услуги
+                  </div>
+                  <div class="designe-title-bottom">
+                    Дизайн
+                  </div>
+              </div>
+              <div class="date-designe date-designe-flex">
+                <div class="designe-title-block">
+                  <div class="designe-title-up">
+                    География
+                  </div>
+                  <div class="designe-title-bottom">
+                    Россия
+                  </div>
+                </div>
+                  <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.0852C12.8085 15.0852 15.0852 12.8085 15.0852 10C15.0852 7.19153 12.8085 4.91481 10 4.91481C7.19153 4.91481 4.91481 7.19153 4.91481 10C4.91481 12.8085 7.19153 15.0852 10 15.0852ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#66E9E2"/>
+                    <path d="M10.4005 28L2.00048 16H18.0005L10.4005 28Z" fill="#66E9E2"/>
+                    </svg>                      
+              </div>
+              <div class="date-designe">
+                <div class="designe-title-up">
+                  Клиент
+                </div>
+                <div class="date-designe-img">
+                  <picture><source srcset="img/img-36.webp"type="image/webp"><img src="img/img-36.png" alt="img-36"></picture>
+                </div>
+            </div>
+            </div>
+            <div class="slide-item-pluse">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 0H22.5V22.5H0V37.5H22.5V60H37.5V37.5H60V22.5H37.5V0Z" fill="#66E9E2"/>
+                    </svg>
+            </div>
+        </div>
+          </div>
+          <div class="swiper-slide swiper-slide-2 op">
+            <div class="date-item">
+            <div class="slide-item date-item-2">
+                <div class="slide-item date-item-1">
+                    <div class="box-date">
+                      <div class="date-title">
+                        <div class="date-title-text-up">18 м<sup>2</sup></div>
+                        <div class="date-title-text-bottom">мск</div>
+                      </div>
+                      <svg width="160" height="132" viewBox="0 0 160 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="159.5" y1="51" x2="159.5" y2="1" stroke="white"/>
+                        <line x1="110" y1="0.5" x2="160" y2="0.5" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 160 81)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(1 0 0 -1 110 131)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 0 51)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-1 0 0 1 50 1)" stroke="white"/>
+                        <line x1="0.5" y1="81" x2="0.499998" y2="131" stroke="white"/>
+                        <line x1="50" y1="131.5" y2="131.5" stroke="white"/>
+                        </svg>
+                    </div>
+                    <div class="date-designe">
+                        <div class="designe-title-up">
+                          Услуги
+                        </div>
+                        <div class="designe-title-bottom">
+                        Веб - разработка
+                        </div>
+                    </div>
+                    <div class="date-designe date-designe-flex">
+                      <div class="designe-title-block">
+                        <div class="designe-title-up">
+                          География
+                        </div>
+                        <div class="designe-title-bottom">
+                          Россия, США
+                        </div>
+                      </div>
+                      <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.4">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.0852C12.8085 15.0852 15.0852 12.8085 15.0852 10C15.0852 7.19153 12.8085 4.91481 10 4.91481C7.19153 4.91481 4.91481 7.19153 4.91481 10C4.91481 12.8085 7.19153 15.0852 10 15.0852ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#66E9E2"/>
+                        <path d="M10.4005 28L2.00048 16H18.0005L10.4005 28Z" fill="#66E9E2"/>
+                        </g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 15.0852C22.8085 15.0852 25.0852 12.8085 25.0852 10C25.0852 7.19153 22.8085 4.91481 20 4.91481C17.1915 4.91481 14.9148 7.19153 14.9148 10C14.9148 12.8085 17.1915 15.0852 20 15.0852ZM20 20C25.5228 20 30 15.5228 30 10C30 4.47715 25.5228 0 20 0C14.4772 0 10 4.47715 10 10C10 15.5228 14.4772 20 20 20Z" fill="#66E9E2"/>
+                        <path d="M20.4005 28L12.0005 16H28.0005L20.4005 28Z" fill="#66E9E2"/>
+                        </svg>                     
+                    </div>
+                    <div class="date-designe">
+                      <div class="designe-title-up">
+                        Клиент
+                      </div>
+                      <div class="date-designe-img">
+                        <picture><source srcset="img/img-99.webp"type="image/webp"><img src="img/img-99.png" alt="img-36"></picture>
+                      </div>
+                  </div>
+                  </div>
+            </div>
+                <div class="slide-item-pluse">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M37.5 0H22.5V22.5H0V37.5H22.5V60H37.5V37.5H60V22.5H37.5V0Z" fill="#66E9E2"/>
+                        </svg>
+                </div>
+          </div>
+        </div>
+          <div class="swiper-slide swiper-slide-2 op">
+            <div class="date-item">
+            <div class="slide-item date-item-3">
+                <div class="slide-item date-item-1">
+                    <div class="box-date">
+                      <div class="date-title">
+                        <div class="date-title-text-up">56 м<sup>2</sup></div>
+                        <div class="date-title-text-bottom">мск</div>
+                      </div>
+                      <svg width="160" height="132" viewBox="0 0 160 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="159.5" y1="51" x2="159.5" y2="1" stroke="white"/>
+                        <line x1="110" y1="0.5" x2="160" y2="0.5" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 160 81)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(1 0 0 -1 110 131)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 0 51)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-1 0 0 1 50 1)" stroke="white"/>
+                        <line x1="0.5" y1="81" x2="0.499998" y2="131" stroke="white"/>
+                        <line x1="50" y1="131.5" y2="131.5" stroke="white"/>
+                        </svg>
+                    </div>
+                    <div class="date-designe">
+                        <div class="designe-title-up">
+                          Услуги
+                        </div>
+                        <div class="designe-title-bottom">
+                        SEO - продвижение
+                        </div>
+                    </div>
+                    <div class="date-designe date-designe-flex">
+                      <div class="designe-title-block">
+                        <div class="designe-title-up">
+                          География
+                        </div>
+                        <div class="designe-title-bottom">
+                          Россия, США
+                        </div>
+                      </div>
+                      <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.4">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.0852C12.8085 15.0852 15.0852 12.8085 15.0852 10C15.0852 7.19153 12.8085 4.91481 10 4.91481C7.19153 4.91481 4.91481 7.19153 4.91481 10C4.91481 12.8085 7.19153 15.0852 10 15.0852ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#66E9E2"/>
+                        <path d="M10.4005 28L2.00048 16H18.0005L10.4005 28Z" fill="#66E9E2"/>
+                        </g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 15.0852C22.8085 15.0852 25.0852 12.8085 25.0852 10C25.0852 7.19153 22.8085 4.91481 20 4.91481C17.1915 4.91481 14.9148 7.19153 14.9148 10C14.9148 12.8085 17.1915 15.0852 20 15.0852ZM20 20C25.5228 20 30 15.5228 30 10C30 4.47715 25.5228 0 20 0C14.4772 0 10 4.47715 10 10C10 15.5228 14.4772 20 20 20Z" fill="#66E9E2"/>
+                        <path d="M20.4005 28L12.0005 16H28.0005L20.4005 28Z" fill="#66E9E2"/>
+                        </svg>                   
+                    </div>
+                    <div class="date-designe">
+                      <div class="designe-title-up">
+                        Клиент
+                      </div>
+                      <div class="date-designe-img">
+
+                      </div>
+                  </div>
+                  </div>
+            </div>
+            <div class="slide-item-pluse">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 0H22.5V22.5H0V37.5H22.5V60H37.5V37.5H60V22.5H37.5V0Z" fill="#66E9E2"/>
+                    </svg>
+            </div>
+          </div>
+        </div>
+          <div class="swiper-slide swiper-slide-2 op">
+            <div class="date-item">
+            <div class="slide-item date-item-4">
+                <div class="slide-item date-item-1">
+                    <div class="box-date">
+                      <div class="date-title">
+                        <div class="date-title-text-up">70 м<sup>2</sup></div>
+                        <div class="date-title-text-bottom">мск</div>
+                      </div>
+                      <svg width="160" height="132" viewBox="0 0 160 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="159.5" y1="51" x2="159.5" y2="1" stroke="white"/>
+                        <line x1="110" y1="0.5" x2="160" y2="0.5" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 160 81)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(1 0 0 -1 110 131)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 0 51)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-1 0 0 1 50 1)" stroke="white"/>
+                        <line x1="0.5" y1="81" x2="0.499998" y2="131" stroke="white"/>
+                        <line x1="50" y1="131.5" y2="131.5" stroke="white"/>
+                        </svg>
+                    </div>
+                    <div class="date-designe">
+                        <div class="designe-title-up">
+                          Услуги
+                        </div>
+                        <div class="designe-title-bottom">
+                        Контекстная<br>реклама
+                        </div>
+                    </div>
+                    <div class="date-designe date-designe-flex">
+                      <div class="designe-title-block">
+                        <div class="designe-title-up">
+                          География
+                        </div>
+                        <div class="designe-title-bottom">
+                          Россия, США
+                        </div>
+                      </div>
+                      <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.4">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.0852C12.8085 15.0852 15.0852 12.8085 15.0852 10C15.0852 7.19153 12.8085 4.91481 10 4.91481C7.19153 4.91481 4.91481 7.19153 4.91481 10C4.91481 12.8085 7.19153 15.0852 10 15.0852ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#66E9E2"/>
+                        <path d="M10.4005 28L2.00048 16H18.0005L10.4005 28Z" fill="#66E9E2"/>
+                        </g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 15.0852C22.8085 15.0852 25.0852 12.8085 25.0852 10C25.0852 7.19153 22.8085 4.91481 20 4.91481C17.1915 4.91481 14.9148 7.19153 14.9148 10C14.9148 12.8085 17.1915 15.0852 20 15.0852ZM20 20C25.5228 20 30 15.5228 30 10C30 4.47715 25.5228 0 20 0C14.4772 0 10 4.47715 10 10C10 15.5228 14.4772 20 20 20Z" fill="#66E9E2"/>
+                        <path d="M20.4005 28L12.0005 16H28.0005L20.4005 28Z" fill="#66E9E2"/>
+                        </svg>                     
+                    </div>
+                    <div class="date-designe">
+                      <div class="designe-title-up">
+                        Клиент
+                      </div>
+                      <div class="date-designe-img">
+
+                      </div>
+                  </div>
+                  </div>
+            </div>
+            <div class="slide-item-pluse">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 0H22.5V22.5H0V37.5H22.5V60H37.5V37.5H60V22.5H37.5V0Z" fill="#66E9E2"/>
+                    </svg>
+            </div>
+          </div>
+        </div>
+          <div class="swiper-slide swiper-slide-2 op">
+            <div class="date-item">
+            <div class="slide-item date-item-5">
+                <div class="slide-item date-item-1">
+                    <div class="box-date">
+                      <div class="date-title">
+                        <div class="date-title-text-up">70 м<sup>2</sup></div>
+                        <div class="date-title-text-bottom">мск</div>
+                      </div>
+                      <svg width="160" height="132" viewBox="0 0 160 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="159.5" y1="51" x2="159.5" y2="1" stroke="white"/>
+                        <line x1="110" y1="0.5" x2="160" y2="0.5" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 160 81)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(1 0 0 -1 110 131)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 0 51)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-1 0 0 1 50 1)" stroke="white"/>
+                        <line x1="0.5" y1="81" x2="0.499998" y2="131" stroke="white"/>
+                        <line x1="50" y1="131.5" y2="131.5" stroke="white"/>
+                        </svg>
+                    </div>
+                    <div class="date-designe">
+                        <div class="designe-title-up">
+                          Услуги
+                        </div>
+                        <div class="designe-title-bottom">
+                        Таргетированная<br>реклама
+                        </div>
+                    </div>
+                    <div class="date-designe date-designe-flex">
+                      <div class="designe-title-block">
+                        <div class="designe-title-up">
+                          География
+                        </div>
+                        <div class="designe-title-bottom">
+                          Россия, США
+                        </div>
+                      </div>
+                      <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.4">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.0852C12.8085 15.0852 15.0852 12.8085 15.0852 10C15.0852 7.19153 12.8085 4.91481 10 4.91481C7.19153 4.91481 4.91481 7.19153 4.91481 10C4.91481 12.8085 7.19153 15.0852 10 15.0852ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#66E9E2"/>
+                        <path d="M10.4005 28L2.00048 16H18.0005L10.4005 28Z" fill="#66E9E2"/>
+                        </g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 15.0852C22.8085 15.0852 25.0852 12.8085 25.0852 10C25.0852 7.19153 22.8085 4.91481 20 4.91481C17.1915 4.91481 14.9148 7.19153 14.9148 10C14.9148 12.8085 17.1915 15.0852 20 15.0852ZM20 20C25.5228 20 30 15.5228 30 10C30 4.47715 25.5228 0 20 0C14.4772 0 10 4.47715 10 10C10 15.5228 14.4772 20 20 20Z" fill="#66E9E2"/>
+                        <path d="M20.4005 28L12.0005 16H28.0005L20.4005 28Z" fill="#66E9E2"/>
+                        </svg>                     
+                    </div>
+                    <div class="date-designe">
+                      <div class="designe-title-up">
+                        Клиент
+                      </div>
+                      <div class="date-designe-img">
+
+                      </div>
+                  </div>
+                  </div>
+            </div>
+            <div class="slide-item-pluse">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 0H22.5V22.5H0V37.5H22.5V60H37.5V37.5H60V22.5H37.5V0Z" fill="#66E9E2"/>
+                    </svg>
+            </div>
+          </div>
+        </div>
+          <div class="swiper-slide swiper-slide-2 op">
+            <div class="date-item">
+            <div class="slide-item date-item-6">
+                <div class="slide-item date-item-1">
+                    <div class="box-date box-date-w">
+                      <div class="date-title date-title-flex">
+                          <div class="date-title-wrapp-left">
+                        <div class="date-title-text-up">100 м<sup>2</sup></div>
+                        <div class="date-title-text-bottom">мск</div>
+                    </div>
+                    <div class="date-title-wrapp-right">
+                        <div class="date-title-text-up">В.НОВГОРОД</div>
+                        <div class="date-title-text-sup">25 м<sup>2</sup></div>
+                    </div>
+                      </div>
+                      <svg width="348" height="132" viewBox="0 0 348 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="347.5" y1="51" x2="347.5" y2="1" stroke="white"/>
+                        <line x1="298" y1="0.5" x2="348" y2="0.5" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 348 81)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(1 0 0 -1 298 131)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 0 51)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-1 0 0 1 50 1)" stroke="white"/>
+                        <line x1="0.5" y1="81" x2="0.499998" y2="131" stroke="white"/>
+                        <line x1="50" y1="131.5" y2="131.5" stroke="white"/>
+                        </svg>
+                    </div>
+                    <div class="date-designe-wrapp-flex">
+                    <div class="date-designe-wrapp">
+                    <div class="date-designe">
+                        <div class="designe-title-up">
+                          Услуги
+                        </div>
+                        <div class="designe-title-bottom">
+                            SMM
+                        </div>
+                    </div>
+                    <div class="date-designe date-designe-flex">
+                      <div class="designe-title-block">
+                        <div class="designe-title-up">
+                          География
+                        </div>
+                        <div class="designe-title-bottom">
+                            Россия, США
+                        </div>
+                      </div>
+                      <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.4">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.0852C12.8085 15.0852 15.0852 12.8085 15.0852 10C15.0852 7.19153 12.8085 4.91481 10 4.91481C7.19153 4.91481 4.91481 7.19153 4.91481 10C4.91481 12.8085 7.19153 15.0852 10 15.0852ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#66E9E2"/>
+                        <path d="M10.4005 28L2.00048 16H18.0005L10.4005 28Z" fill="#66E9E2"/>
+                        </g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 15.0852C22.8085 15.0852 25.0852 12.8085 25.0852 10C25.0852 7.19153 22.8085 4.91481 20 4.91481C17.1915 4.91481 14.9148 7.19153 14.9148 10C14.9148 12.8085 17.1915 15.0852 20 15.0852ZM20 20C25.5228 20 30 15.5228 30 10C30 4.47715 25.5228 0 20 0C14.4772 0 10 4.47715 10 10C10 15.5228 14.4772 20 20 20Z" fill="#66E9E2"/>
+                        <path d="M20.4005 28L12.0005 16H28.0005L20.4005 28Z" fill="#66E9E2"/>
+                        </svg>                    
+                    </div>
+                    <div class="date-designe">
+                      <div class="designe-title-up">
+                        Клиент
+                      </div>
+                      <div class="date-designe-img">
+
+                      </div>
+                  </div>
+                </div>
+                  <div class="slide-item-pluse pluse">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M37.5 0H22.5V22.5H0V37.5H22.5V60H37.5V37.5H60V22.5H37.5V0Z" fill="#66E9E2"/>
+                        </svg>
+                </div>
+            </div>
+                  </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-2 op">
+            <div class="date-item">
+            <div class="slide-item date-item-6">
+                <div class="slide-item date-item-1">
+                    <div class="box-date box-date-w">
+                      <div class="date-title date-title-flex">
+                          <div class="date-title-wrapp-left">
+                        <div class="date-title-text-up">100 м<sup>2</sup></div>
+                        <div class="date-title-text-bottom">мск</div>
+                    </div>
+                    <div class="date-title-wrapp-right">
+                        <div class="date-title-text-up">В.НОВГОРОД</div>
+                        <div class="date-title-text-sup">25 м<sup>2</sup></div>
+                    </div>
+                      </div>
+                      <svg width="348" height="132" viewBox="0 0 348 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="347.5" y1="51" x2="347.5" y2="1" stroke="white"/>
+                        <line x1="298" y1="0.5" x2="348" y2="0.5" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 348 81)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(1 0 0 -1 298 131)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 0 51)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-1 0 0 1 50 1)" stroke="white"/>
+                        <line x1="0.5" y1="81" x2="0.499998" y2="131" stroke="white"/>
+                        <line x1="50" y1="131.5" y2="131.5" stroke="white"/>
+                        </svg>
+                    </div>
+                    <div class="date-designe-wrapp-flex">
+                    <div class="date-designe-wrapp">
+                    <div class="date-designe">
+                        <div class="designe-title-up">
+                          Услуги
+                        </div>
+                        <div class="designe-title-bottom">
+                            Motion-дизайн
+                        </div>
+                    </div>
+                    <div class="date-designe date-designe-flex">
+                      <div class="designe-title-block">
+                        <div class="designe-title-up">
+                          География
+                        </div>
+                        <div class="designe-title-bottom">
+                          Россия, США
+                        </div>
+                      </div>
+                      <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.4">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.0852C12.8085 15.0852 15.0852 12.8085 15.0852 10C15.0852 7.19153 12.8085 4.91481 10 4.91481C7.19153 4.91481 4.91481 7.19153 4.91481 10C4.91481 12.8085 7.19153 15.0852 10 15.0852ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#66E9E2"/>
+                        <path d="M10.4005 28L2.00048 16H18.0005L10.4005 28Z" fill="#66E9E2"/>
+                        </g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 15.0852C22.8085 15.0852 25.0852 12.8085 25.0852 10C25.0852 7.19153 22.8085 4.91481 20 4.91481C17.1915 4.91481 14.9148 7.19153 14.9148 10C14.9148 12.8085 17.1915 15.0852 20 15.0852ZM20 20C25.5228 20 30 15.5228 30 10C30 4.47715 25.5228 0 20 0C14.4772 0 10 4.47715 10 10C10 15.5228 14.4772 20 20 20Z" fill="#66E9E2"/>
+                        <path d="M20.4005 28L12.0005 16H28.0005L20.4005 28Z" fill="#66E9E2"/>
+                        </svg>                    
+                    </div>
+                    <div class="date-designe">
+                      <div class="designe-title-up">
+                        Клиент
+                      </div>
+                      <div class="date-designe-img">
+
+                      </div>
+                  </div>
+                </div>
+                  <div class="slide-item-pluse pluse">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M37.5 0H22.5V22.5H0V37.5H22.5V60H37.5V37.5H60V22.5H37.5V0Z" fill="#66E9E2"/>
+                        </svg>
+                </div>
+            </div>
+                  </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-2 op">
+            <div class="date-item">
+            <div class="slide-item date-item-6">
+                <div class="slide-item date-item-1">
+                    <div class="box-date box-date-w">
+                      <div class="date-title date-title-flex">
+                          <div class="date-title-wrapp-left">
+                        <div class="date-title-text-up">100 м<sup>2</sup></div>
+                        <div class="date-title-text-bottom">мск</div>
+                    </div>
+                    <div class="date-title-wrapp-right">
+                        <div class="date-title-wrapp-top">
+                        <div class="date-title-text-up">В.НОВГОРОД</div>
+                        <div class="date-title-text-sup">25 м<sup>2</sup></div>
+                    </div>
+                    <div class="date-title-wrapp-bottom">
+                        <div class="date-title-text-up a-text-r">ОРЕЛ</div>
+                        <div class="date-title-text-sup">18 м<sup>2</sup></div>
+                    </div>
+                    </div>
+                      </div>
+                      <svg width="348" height="132" viewBox="0 0 348 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="347.5" y1="51" x2="347.5" y2="1" stroke="white"/>
+                        <line x1="298" y1="0.5" x2="348" y2="0.5" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 348 81)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(1 0 0 -1 298 131)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 0 51)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-1 0 0 1 50 1)" stroke="white"/>
+                        <line x1="0.5" y1="81" x2="0.499998" y2="131" stroke="white"/>
+                        <line x1="50" y1="131.5" y2="131.5" stroke="white"/>
+                        </svg>
+                    </div>
+                    <div class="date-designe-wrapp-flex">
+                    <div class="date-designe-wrapp">
+                    <div class="date-designe">
+                        <div class="designe-title-up">
+                          Услуги
+                        </div>
+                        <div class="designe-title-bottom">
+                            Мобильная<br>разработка
+                        </div>
+                    </div>
+                    <div class="date-designe date-designe-flex">
+                      <div class="designe-title-block">
+                        <div class="designe-title-up">
+                          География
+                        </div>
+                        <div class="designe-title-bottom">
+                            Россия, США
+                        </div>
+                      </div>
+                      <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.4">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.0852C12.8085 15.0852 15.0852 12.8085 15.0852 10C15.0852 7.19153 12.8085 4.91481 10 4.91481C7.19153 4.91481 4.91481 7.19153 4.91481 10C4.91481 12.8085 7.19153 15.0852 10 15.0852ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#66E9E2"/>
+                        <path d="M10.4005 28L2.00048 16H18.0005L10.4005 28Z" fill="#66E9E2"/>
+                        </g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 15.0852C22.8085 15.0852 25.0852 12.8085 25.0852 10C25.0852 7.19153 22.8085 4.91481 20 4.91481C17.1915 4.91481 14.9148 7.19153 14.9148 10C14.9148 12.8085 17.1915 15.0852 20 15.0852ZM20 20C25.5228 20 30 15.5228 30 10C30 4.47715 25.5228 0 20 0C14.4772 0 10 4.47715 10 10C10 15.5228 14.4772 20 20 20Z" fill="#66E9E2"/>
+                        <path d="M20.4005 28L12.0005 16H28.0005L20.4005 28Z" fill="#66E9E2"/>
+                        </svg>                    
+                    </div>
+                    <div class="date-designe">
+                      <div class="designe-title-up">
+                        Клиент
+                      </div>
+                      <div class="date-designe-img">
+
+                      </div>
+                  </div>
+                </div>
+                  <div class="slide-item-pluse pluse">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M37.5 0H22.5V22.5H0V37.5H22.5V60H37.5V37.5H60V22.5H37.5V0Z" fill="#66E9E2"/>
+                        </svg>
+                </div>
+            </div>
+                  </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-2 op">
+            <div class="date-item">
+            <div class="slide-item date-item-6">
+                <div class="slide-item date-item-1">
+                    <div class="box-date box-date-w">
+                      <div class="date-title date-title-flex">
+                          <div class="date-title-wrapp-left">
+                        <div class="date-title-text-up">250 м<sup>2</sup></div>
+                        <div class="date-title-text-bottom">мск</div>
+                    </div>
+                    <div class="date-title-wrapp-right">
+                        <div class="date-title-wrapp-top">
+                        <div class="date-title-text-up">НОВОСИБИРСК</div>
+                        <div class="date-title-text-sup">40 м<sup>2</sup></div>
+                    </div>
+                    <div class="date-title-wrapp-bottom">
+                        <div class="date-title-text-up a-text-r">ОРЕЛ</div>
+                        <div class="date-title-text-sup">18 м<sup>2</sup></div>
+                    </div>
+                    </div>
+                      </div>
+                      <svg width="348" height="132" viewBox="0 0 348 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="347.5" y1="51" x2="347.5" y2="1" stroke="white"/>
+                        <line x1="298" y1="0.5" x2="348" y2="0.5" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 348 81)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(1 0 0 -1 298 131)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 0 51)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-1 0 0 1 50 1)" stroke="white"/>
+                        <line x1="0.5" y1="81" x2="0.499998" y2="131" stroke="white"/>
+                        <line x1="50" y1="131.5" y2="131.5" stroke="white"/>
+                        </svg>
+                    </div>
+                    <div class="date-designe-wrapp-flex">
+                    <div class="date-designe-wrapp">
+                    <div class="date-designe">
+                        <div class="designe-title-up">
+                          Услуги
+                        </div>
+                        <div class="designe-title-bottom">
+                            Performance
+                        </div>
+                    </div>
+                    <div class="date-designe date-designe-flex">
+                      <div class="designe-title-block">
+                        <div class="designe-title-up">
+                          География
+                        </div>
+                        <div class="designe-title-bottom">
+                            Россия, США
+                        </div>
+                      </div>
+                      <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.4">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.0852C12.8085 15.0852 15.0852 12.8085 15.0852 10C15.0852 7.19153 12.8085 4.91481 10 4.91481C7.19153 4.91481 4.91481 7.19153 4.91481 10C4.91481 12.8085 7.19153 15.0852 10 15.0852ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#66E9E2"/>
+                        <path d="M10.4005 28L2.00048 16H18.0005L10.4005 28Z" fill="#66E9E2"/>
+                        </g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 15.0852C22.8085 15.0852 25.0852 12.8085 25.0852 10C25.0852 7.19153 22.8085 4.91481 20 4.91481C17.1915 4.91481 14.9148 7.19153 14.9148 10C14.9148 12.8085 17.1915 15.0852 20 15.0852ZM20 20C25.5228 20 30 15.5228 30 10C30 4.47715 25.5228 0 20 0C14.4772 0 10 4.47715 10 10C10 15.5228 14.4772 20 20 20Z" fill="#66E9E2"/>
+                        <path d="M20.4005 28L12.0005 16H28.0005L20.4005 28Z" fill="#66E9E2"/>
+                        </svg>                    
+                    </div>
+                    <div class="date-designe">
+                      <div class="designe-title-up">
+                        Клиент
+                      </div>
+                      <div class="date-designe-img">
+
+                      </div>
+                  </div>
+                </div>
+                  <div class="slide-item-pluse pluse">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M37.5 0H22.5V22.5H0V37.5H22.5V60H37.5V37.5H60V22.5H37.5V0Z" fill="#66E9E2"/>
+                        </svg>
+                </div>
+            </div>
+                  </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-2 op">
+            <div class="date-item">
+            <div class="slide-item date-item-6">
+                <div class="slide-item date-item-1">
+                    <div class="box-date box-date-w">
+                      <div class="date-title date-title-flex">
+                          <div class="date-title-wrapp-left">
+                        <div class="date-title-text-up">250 м<sup>2</sup></div>
+                        <div class="date-title-text-bottom">мск</div>
+                    </div>
+                    <div class="date-title-wrapp-right">
+                        <div class="date-title-wrapp-top">
+                        <div class="date-title-text-up">НОВОСИБИРСК</div>
+                        <div class="date-title-text-sup">40 м<sup>2</sup></div>
+                    </div>
+                    <div class="date-title-wrapp-bottom">
+                        <div class="date-title-text-up a-text-r">ОРЕЛ</div>
+                        <div class="date-title-text-sup">18 м<sup>2</sup></div>
+                    </div>
+                    </div>
+                      </div>
+                      <svg width="348" height="132" viewBox="0 0 348 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="347.5" y1="51" x2="347.5" y2="1" stroke="white"/>
+                        <line x1="298" y1="0.5" x2="348" y2="0.5" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 348 81)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(1 0 0 -1 298 131)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 0 51)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-1 0 0 1 50 1)" stroke="white"/>
+                        <line x1="0.5" y1="81" x2="0.499998" y2="131" stroke="white"/>
+                        <line x1="50" y1="131.5" y2="131.5" stroke="white"/>
+                        </svg>
+                    </div>
+                    <div class="date-designe-wrapp-flex">
+                    <div class="date-designe-wrapp">
+                    <div class="date-designe">
+                        <div class="designe-title-up">
+                          Услуги
+                        </div>
+                        <div class="designe-title-bottom">
+                            Брендинг<br>территорий
+                        </div>
+                    </div>
+                    <div class="date-designe date-designe-flex">
+                      <div class="designe-title-block">
+                        <div class="designe-title-up">
+                          География
+                        </div>
+                        <div class="designe-title-bottom">
+                            Россия, США
+                        </div>
+                      </div>
+                      <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.4">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.0852C12.8085 15.0852 15.0852 12.8085 15.0852 10C15.0852 7.19153 12.8085 4.91481 10 4.91481C7.19153 4.91481 4.91481 7.19153 4.91481 10C4.91481 12.8085 7.19153 15.0852 10 15.0852ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#66E9E2"/>
+                        <path d="M10.4005 28L2.00048 16H18.0005L10.4005 28Z" fill="#66E9E2"/>
+                        </g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 15.0852C22.8085 15.0852 25.0852 12.8085 25.0852 10C25.0852 7.19153 22.8085 4.91481 20 4.91481C17.1915 4.91481 14.9148 7.19153 14.9148 10C14.9148 12.8085 17.1915 15.0852 20 15.0852ZM20 20C25.5228 20 30 15.5228 30 10C30 4.47715 25.5228 0 20 0C14.4772 0 10 4.47715 10 10C10 15.5228 14.4772 20 20 20Z" fill="#66E9E2"/>
+                        <path d="M20.4005 28L12.0005 16H28.0005L20.4005 28Z" fill="#66E9E2"/>
+                        </svg>                    
+                    </div>
+                    <div class="date-designe">
+                      <div class="designe-title-up">
+                        Клиент
+                      </div>
+                      <div class="date-designe-img">
+
+                      </div>
+                  </div>
+                </div>
+                  <div class="slide-item-pluse pluse">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M37.5 0H22.5V22.5H0V37.5H22.5V60H37.5V37.5H60V22.5H37.5V0Z" fill="#66E9E2"/>
+                        </svg>
+                </div>
+            </div>
+                  </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-2 op">
+            <div class="date-item">
+            <div class="slide-item date-item-6">
+                <div class="slide-item date-item-1">
+                    <div class="box-date box-date-w">
+                      <div class="date-title date-title-flex">
+                          <div class="date-title-wrapp-left">
+                        <div class="date-title-text-up">250 м<sup>2</sup></div>
+                        <div class="date-title-text-bottom">мск</div>
+                    </div>
+                    <div class="date-title-wrapp-right">
+
+                    <div class="date-title-wrapp-bottom">
+                        <div class="date-title-text-up a-text-r">ОРЕЛ</div>
+                        <div class="date-title-text-sup">88 м<sup>2</sup></div>
+                    </div>
+                    </div>
+                      </div>
+                      <svg width="348" height="132" viewBox="0 0 348 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="347.5" y1="51" x2="347.5" y2="1" stroke="white"/>
+                        <line x1="298" y1="0.5" x2="348" y2="0.5" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 348 81)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(1 0 0 -1 298 131)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 0 51)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-1 0 0 1 50 1)" stroke="white"/>
+                        <line x1="0.5" y1="81" x2="0.499998" y2="131" stroke="white"/>
+                        <line x1="50" y1="131.5" y2="131.5" stroke="white"/>
+                        </svg>
+                    </div>
+                    <div class="date-designe-wrapp-flex">
+                    <div class="date-designe-wrapp">
+                    <div class="date-designe">
+                        <div class="designe-title-up">
+                          Услуги
+                        </div>
+                        <div class="designe-title-bottom">
+                            Исследования<br>регионов РФ
+                        </div>
+                    </div>
+                    <div class="date-designe date-designe-flex">
+                      <div class="designe-title-block">
+                        <div class="designe-title-up">
+                          География
+                        </div>
+                        <div class="designe-title-bottom">
+                            Россия, США
+                        </div>
+                      </div>
+                      <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.4">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.0852C12.8085 15.0852 15.0852 12.8085 15.0852 10C15.0852 7.19153 12.8085 4.91481 10 4.91481C7.19153 4.91481 4.91481 7.19153 4.91481 10C4.91481 12.8085 7.19153 15.0852 10 15.0852ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#66E9E2"/>
+                        <path d="M10.4005 28L2.00048 16H18.0005L10.4005 28Z" fill="#66E9E2"/>
+                        </g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 15.0852C22.8085 15.0852 25.0852 12.8085 25.0852 10C25.0852 7.19153 22.8085 4.91481 20 4.91481C17.1915 4.91481 14.9148 7.19153 14.9148 10C14.9148 12.8085 17.1915 15.0852 20 15.0852ZM20 20C25.5228 20 30 15.5228 30 10C30 4.47715 25.5228 0 20 0C14.4772 0 10 4.47715 10 10C10 15.5228 14.4772 20 20 20Z" fill="#66E9E2"/>
+                        <path d="M20.4005 28L12.0005 16H28.0005L20.4005 28Z" fill="#66E9E2"/>
+                        </svg>                    
+                    </div>
+                    <div class="date-designe">
+                      <div class="designe-title-up">
+                        Клиент
+                      </div>
+                      <div class="date-designe-img">
+
+                      </div>
+                  </div>
+                </div>
+                  <div class="slide-item-pluse pluse">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M37.5 0H22.5V22.5H0V37.5H22.5V60H37.5V37.5H60V22.5H37.5V0Z" fill="#66E9E2"/>
+                        </svg>
+                </div>
+            </div>
+                  </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-2 op">
+            <div class="date-item">
+            <div class="slide-item date-item-6">
+                <div class="slide-item date-item-1">
+                    <div class="box-date box-date-w">
+                      <div class="date-title date-title-flex">
+                          <div class="date-title-wrapp-left">
+                        <div class="date-title-text-up">250 м<sup>2</sup></div>
+                        <div class="date-title-text-bottom">мск</div>
+                    </div>
+                    <div class="date-title-wrapp-right">
+
+                    <div class="date-title-wrapp-bottom">
+                        <div class="date-title-text-up a-text-r">ОРЕЛ</div>
+                        <div class="date-title-text-sup">150 м<sup>2</sup></div>
+                    </div>
+                    </div>
+                      </div>
+                      <svg width="348" height="132" viewBox="0 0 348 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="347.5" y1="51" x2="347.5" y2="1" stroke="white"/>
+                        <line x1="298" y1="0.5" x2="348" y2="0.5" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 348 81)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(1 0 0 -1 298 131)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 0 51)" stroke="white"/>
+                        <line y1="-0.5" x2="50" y2="-0.5" transform="matrix(-1 0 0 1 50 1)" stroke="white"/>
+                        <line x1="0.5" y1="81" x2="0.499998" y2="131" stroke="white"/>
+                        <line x1="50" y1="131.5" y2="131.5" stroke="white"/>
+                        </svg>
+                    </div>
+                    <div class="date-designe-wrapp-flex">
+                    <div class="date-designe-wrapp">
+                    <div class="date-designe">
+                        <div class="designe-title-up">
+                          Услуги
+                        </div>
+                        <div class="designe-title-bottom">
+                            Медийная реклама
+                        </div>
+                    </div>
+                    <div class="date-designe date-designe-flex">
+                      <div class="designe-title-block">
+                        <div class="designe-title-up">
+                          География
+                        </div>
+                        <div class="designe-title-bottom">
+                            Россия, США
+                        </div>
+                      </div>
+                      <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.4">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15.0852C12.8085 15.0852 15.0852 12.8085 15.0852 10C15.0852 7.19153 12.8085 4.91481 10 4.91481C7.19153 4.91481 4.91481 7.19153 4.91481 10C4.91481 12.8085 7.19153 15.0852 10 15.0852ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#66E9E2"/>
+                        <path d="M10.4005 28L2.00048 16H18.0005L10.4005 28Z" fill="#66E9E2"/>
+                        </g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 15.0852C22.8085 15.0852 25.0852 12.8085 25.0852 10C25.0852 7.19153 22.8085 4.91481 20 4.91481C17.1915 4.91481 14.9148 7.19153 14.9148 10C14.9148 12.8085 17.1915 15.0852 20 15.0852ZM20 20C25.5228 20 30 15.5228 30 10C30 4.47715 25.5228 0 20 0C14.4772 0 10 4.47715 10 10C10 15.5228 14.4772 20 20 20Z" fill="#66E9E2"/>
+                        <path d="M20.4005 28L12.0005 16H28.0005L20.4005 28Z" fill="#66E9E2"/>
+                        </svg>                    
+                    </div>
+                    <div class="date-designe">
+                      <div class="designe-title-up">
+                        Клиент
+                      </div>
+                      <div class="date-designe-img">
+
+                      </div>
+                  </div>
+                </div>
+
+            </div>
+                  </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        </div>
+    </div>
+</div>
+</div>
+</section>
+                <section class="block-top">
+    <div class="title-block-top">
+        <h1 class="title">Рейтинги</h1>
+        <div class="mr-190">
+            <div class="text-title">Среди наших клиентов крупнейшие российские и зарубежные компании. Небольшой текст о клиентах.
+            </div>
+        </div>
+    </div>
+    <div class="main-conteiner-top">
+        <div class="swiper-6">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+                <div class="swiper-slide op">
+                    <div class="slider-3-wrapper">
+                        <div class="slider-3-img">
+                            <picture><source srcset="img/img-15.webp"type="image/webp"><img src="img/img-15.png" alt=""></picture>
+                        </div>
+                        <div class="slider-3-title-wrapper">
+                            <div class="slider-3-title">
+                                20 место
+                            </div>
+                            <div class="slider-3-text">
+                                в рейтинге<br>интернет-магазинов
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide op">
+                    <div class="slider-3-wrapper">
+                        <div class="slider-3-img">
+                            <picture><source srcset="img/img-16.webp"type="image/webp"><img src="img/img-16.png" alt=""></picture>
+                        </div>
+                        <div class="slider-3-title-wrapper">
+                            <div class="slider-3-title">
+                                20 место
+                            </div>
+                            <div class="slider-3-text">
+                                в рейтинге<br>интернет-магазинов
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide op">
+                    <div class="slider-3-wrapper">
+                        <div class="slider-3-img">
+                            <picture><source srcset="img/img-15.webp"type="image/webp"><img src="img/img-15.png" alt=""></picture>
+                        </div>
+                        <div class="slider-3-title-wrapper">
+                            <div class="slider-3-title">
+                                20 место
+                            </div>
+                            <div class="slider-3-text">
+                                в рейтинге<br>интернет-магазинов
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+          <!--<div class="bt-p-2-wrapper">
+
+            <div class="bt-p-2 bt-prev bt-prev-img"></div>
+            <div class="bt-n-2 bt-next bt-next-img"></div>
+        </div>-->
+        
+          </div>
+                    </div>
+
+</section>
+                <section class="block-awards">
+    <div class="title-block-awards">
+        <h1 class="title">Награды</h1>
+        <div class="mr-190">
+            <div class="text-title">Среди наших клиентов крупнейшие российские и зарубежные компании. Небольшой текст о клиентах.
+            </div>
+        </div>
+    </div>
+    <div class="main-conteiner-awards">
+        <div class="swiper-7">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+                <div class="swiper-slide op">
+                    <div class="slider-awards-wrapper">
+                        <div class="slider-awards">
+                            <div class="awards-title">
+                                <div class="slider-awards-title">1 место<br>за региональный<br>туристический<br>портал “Русь<br>Новгородсткая”</div>
+                                <div class="slider-awards-text">Всероссийский конкурс<br>“Туристический бренд: лучшие<br>практики 2018”</div>
+                            </div>
+                            <svg width="501" height="501" viewBox="0 0 501 501" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="250.5" cy="250.5" r="250" stroke="#66E9E2"/>
+                                </svg>
+                        </div>
+                        <div class="slider-awards-img">
+                            <picture><source srcset="img/img-17.webp"type="image/webp"><img src="img/img-17.png" alt=""></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide op">
+                    <div class="slider-awards-wrapper">
+                        <div class="slider-awards">
+                            <div class="awards-title">
+                                <div class="slider-awards-title">Лауреат за портал<br>новгородской<br>области<br>Novgorod.travel</div>
+                                <div class="slider-awards-text">Конкурса “Лучший<br>туристический портал 2018”<br>в наминации “Туристический<br>портал региона”</div>
+                            </div>
+                            <svg width="501" height="501" viewBox="0 0 501 501" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="500" height="500" stroke="#66E9E2"/>
+                                </svg>
+                        </div>
+                        <div class="slider-awards-img">
+                            <picture><source srcset="img/img-18.webp"type="image/webp"><img src="img/img-18.png" alt=""></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide op">
+                    <div class="slider-awards-wrapper">
+                        <div class="slider-awards">
+                            <div class="awards-title">
+                                <div class="slider-awards-title">1 место<br>за региональный<br>туристический<br>портал “Русь<br>Новгородсткая”</div>
+                                <div class="slider-awards-text">Всероссийский конкурс<br>“Туристический бренд: лучшие<br>практики 2018”</div>
+                            </div>
+                            <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.809015 0.5L250 498.882L499.191 0.5H0.809015Z" stroke="#66E9E2"/>
+                                </svg>
+                        </div>
+                        <div class="slider-awards-img">
+                            <picture><source srcset="img/img-17.webp"type="image/webp"><img src="img/img-17.png" alt=""></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+          </div>
+                    </div>
+</section>
+            </div>
+    </div>
+    <footer class="footer">
+      <div class="conteiner">
+        <div class="body-content">
+          <section class="slider-footer-block">
+
+        <div class="title-block-footer">
+            <h1 class="title font-footer">Офисы</h1>
+        </div>
+        <div class="location-wrapper">
+        <div class="location-item-1">
+            <div class="footer-title-location">
+                <div class="footer-title-top">Москва</div>
+                <div class="footer-title-bottom">Партийный переулок,<br>дом 1, корп. 58, стр. 1</div>
+            </div>
+            <div class="location-footer-svg">
+                <svg width="110" height="161" viewBox="0 0 110 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M54.9991 0C24.6233 0 0 23.8955 0 53.3714C0 82.8473 54.9991 161 54.9991 161C54.9991 161 110 82.8473 110 53.3714C110 23.8955 85.375 0 54.9991 0ZM55.0026 80.6973C38.5584 80.6973 25.1811 67.713 25.1811 51.7593C25.1811 35.8024 38.5584 22.8213 55.0026 22.8213C71.445 22.8213 84.8224 35.8024 84.8224 51.7593C84.8224 67.713 71.4433 80.6973 55.0026 80.6973Z" fill="white"/>
+                    </svg>
+                </div>
+        </div>
+        <div class="location-item-2">
+            <div class="footer-title-location">
+                <div class="footer-title-top">Орёл</div>
+                <div class="footer-title-bottom">Комсомольская улица,<br>дом 251</div>
+            </div>
+            <div class="location-footer-svg">
+                <svg width="110" height="161" viewBox="0 0 110 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M54.9991 0C24.6233 0 0 23.8955 0 53.3714C0 82.8473 54.9991 161 54.9991 161C54.9991 161 110 82.8473 110 53.3714C110 23.8955 85.375 0 54.9991 0ZM55.0026 80.6973C38.5584 80.6973 25.1811 67.713 25.1811 51.7593C25.1811 35.8024 38.5584 22.8213 55.0026 22.8213C71.445 22.8213 84.8224 35.8024 84.8224 51.7593C84.8224 67.713 71.4433 80.6973 55.0026 80.6973Z" fill="white"/>
+                    </svg>
+                </div>
+        </div>
+    </div>
+
+
+</section>
+          <div class="main-conteiner-footer">
+    <div class="swiper-8">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide"><picture><source srcset="img/1.webp"type="image/webp"><img src="img/1.png" alt="img_1"></picture></div>
+            <div class="swiper-slide"><picture><source srcset="img/2.webp"type="image/webp"><img src="img/2.png" alt="img_2"></picture></div>
+            <div class="swiper-slide"><picture><source srcset="img/3.webp"type="image/webp"><img src="img/3.png" alt="img_3"></picture></div>
+        </div>
+
+      
+        <!-- If we need navigation buttons -->
+        <div class="bt-p bt-prev bt-prev-img" cursor-mix="" cursor-class="arrow_link"></div>
+        <div class="bt-n bt-next bt-next-img" cursor-mix="" cursor-class="arrow_link"></div>
+      
+
+      </div>
+                </div>
+
+                <div class="main-conteine-540">
+                    <div class="swiper-9">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                              <div class="swiper-slide">
+                                  <div class="block-slider-5">
+                                          <div class="slider-5-text" data-swiper-parallax="-200">Новогодний корпоратив в московском офисе Renaissance Art Group</div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="block-slider-5">
+                                          <div class="slider-5-text" data-swiper-parallax="-200">Новогодний корпоратив в московском офисе Renaissance Art Group</div>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="block-slider-5">
+                                          <div class="slider-5-text" data-swiper-parallax="-200">Новогодний корпоратив в московском офисе Renaissance Art Group</div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+          <section class="search-block">
+    <div class="search-svg">
+    <svg class="search-block-svg" width="684" height="343" viewBox="0 0 684 343" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M512.75 238.083C549.661 238.083 579.583 208.161 579.583 171.25C579.583 134.339 549.661 104.417 512.75 104.417C475.839 104.417 445.917 134.339 445.917 171.25C445.917 208.161 475.839 238.083 512.75 238.083ZM512.75 342.5C607.329 342.5 684 265.829 684 171.25C684 76.6713 607.329 0 512.75 0C418.171 0 341.5 76.6713 341.5 171.25C341.5 265.829 418.171 342.5 512.75 342.5Z" fill="white"/>
+        <circle cx="171.25" cy="171.25" r="171.25" fill="white"/>
+        </svg>
+    </div>
+    <div class="title-block-search">
+        <h2 class="top-title-search">Мы постоянно</h2>
+        <h1 class="title-search">Ищем талантливых ребят</h1>
+    </div>
+    <div class="search-list-wrapper">
+    <div class="search-list s-1">
+        <div class="search-line"></div>
+        <div class="search-list-item">
+            <div class="search-item-title">Управление<br>проектами</div>
+            <ul class="search-item-wrapper">
+                <li class="search-item">Менеджер проектов</li>
+                <li class="search-item">Аккаунт менеджер</li>
+            </ul>
+        </div>
+    </div>
+    <div class="search-list s-2">
+        <div class="search-line"></div>
+        <div class="search-list-item">
+            <div class="search-item-title">Дизайн</div>
+            <ul class="search-item-wrapper">
+                <li class="search-item">Графический дизайнер</li>
+                <li class="search-item">Веб-дизайнер</li>
+                <li class="search-item">Дизайнер на Tilda</li>
+            </ul>
+        </div>
+    </div>
+    <div class="search-list s-3">
+        <div class="search-line"></div>
+        <div class="search-list-item">
+            <div class="search-item-title">Разработка</div>
+            <ul class="search-item-wrapper">
+                <li class="search-item">Frontend</li>
+                <li class="search-item">Backend</li>
+                <li class="search-item">Контент-менеджер</li>
+                <li class="search-item">Тестировщик</li>
+            </ul>
+        </div>
+    </div>
+    <div class="search-list s-4">
+        <div class="search-line"></div>
+        <div class="search-list-item">
+            <div class="search-item-title">Маркетинг</div>
+            <ul class="search-item-wrapper">
+                <li class="search-item">PPC-специалист</li>
+                <li class="search-item">SEO-специалист</li>
+                <li class="search-item">SMM-менеджер</li>
+                <li class="search-item">Копирайтер</li>
+            </ul>
+        </div>
+    </div>
+    <div class="search-list s-5">
+        <div class="search-line"></div>
+        <div class="search-list-item">
+            <div class="search-item-title">Административно-<br>хозяйственный блок</div>
+        </div>
+    </div>
+</div>
+</section>
+          <section class="resume-block">
+    <div class="title-block-resume">
+        <h2 class="top-title-resume">Если не нашёл открытую вакансию</h2>
+        <h1 class="title-resume">Пиши на <a class='heading menu__link' cursor-mix="" cursor-class="arrow_link">hr@renart.ru</a></h1>
+    </div>
+    <div class="container-form">
+  
+ 
+        
+        <form class="resume-form layout-grid">
+          
+          <div class="group g-1">      
+            <input type="text" required>
+
+            <span class="bar"></span>
+            <label>Представьтесь</label>
+          </div>
+            
+          <div class="group g-2">      
+            <input type="text" required>
+
+            <span class="bar"></span>
+            <label>Специализация</label>
+          </div>
+
+          <div class="group g-3">      
+            <input type="text" class="phone" required>
+
+            <span class="bar"></span>
+            <label>Номер телефона</label>
+          </div>
+            
+          <div class="group g-4">      
+            <input type="text" required>
+
+            <span class="bar"></span>
+            <label>E-mail</label>
+          </div>
+
+          <div class="group g-5">      
+            <textarea name="messageFF" id="messageFF" required rows="1" class="textarea-label"></textarea>
+
+            <span class="bar"></span>
+            <label>Расскажите о себе</label>
+          </div>
+        <div class="input-file-wrapper g-6 menu__link" cursor-mix="" cursor-class="arrow_link">
+            <input name="file" type="file" name="file" id="input-file-import" class="input input-file-import" multiple>
+            <label for="input-file-import" class="input-file">
+    
+            <svg width="39" height="34" viewBox="0 0 39 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29.5627 1.01055L29.5614 1.01048C27.3525 0.898908 25.3007 1.68267 23.7644 3.13975L23.7576 3.14624L23.7509 3.15286L19.7339 7.10929L9.71646 16.976C8.68206 17.9948 8.12879 19.3263 8.12879 20.7657C8.12879 22.205 8.68206 23.5365 9.71646 24.5553C10.7544 25.5776 12.1504 26.1129 13.5424 26.1129C14.9345 26.1129 16.3305 25.5776 17.3684 24.5553L28.2786 13.8094C28.8746 13.2223 28.8746 12.2878 28.2786 11.7007C27.6909 11.1219 26.7685 11.1219 26.1808 11.7007L15.2707 22.4466C14.3135 23.3894 12.767 23.3702 11.8771 22.46L11.8705 22.4532L11.8638 22.4466C11.4128 22.0025 11.1702 21.43 11.1702 20.7657C11.1702 20.1424 11.4182 19.5236 11.8638 19.0847L22.278 8.82728L21.5763 8.11483L22.278 8.82728L25.8486 5.31043C26.73 4.44232 27.9878 3.95125 29.4035 4.03326C30.8517 4.11717 32.2085 4.70211 33.2724 5.75002C35.4684 7.91296 35.5422 11.1801 33.7147 13.0236L25.4866 21.1278L19.0397 27.4776C17.3921 29.1004 15.1646 30.0231 12.7986 30.0231C10.4325 30.0231 8.20507 29.1004 6.55748 27.4776C3.13663 24.1083 3.13663 18.5953 6.55748 15.226L16.4758 5.45696C17.0719 4.86987 17.0719 3.93532 16.4758 3.34822C15.8882 2.76944 14.9657 2.76944 14.3781 3.34822L4.45974 13.1172L5.14351 13.8114L4.45974 13.1172C-0.153246 17.6608 -0.153246 25.0429 4.45974 29.5864C6.7873 31.8789 9.77036 33 12.7986 33C15.8178 33 18.856 31.8846 21.1416 29.5823L27.4851 23.3342L35.8165 15.1283L35.823 15.1219L35.8293 15.1154C38.9381 11.94 38.6409 6.81395 35.3702 3.59245C33.7574 2.004 31.6912 1.12089 29.5627 1.01055ZM15.7815 4.77312C15.7814 4.77325 15.7813 4.77337 15.7811 4.7735L15.7815 4.77312L15.7635 4.75488L15.7815 4.77312Z" fill="black" stroke="black" stroke-width="2"/>
+                </svg>
+            
+            <span class="input-file-text">Прикрепите резюме</span>
+            
+        </label>
+        </div>
+        <input value="Отправить" type="submit" class="submit-resume g-7" cursor-mix="" cursor-class="arrow_link">
+          
+        </form>
+            
+
+        
+      </div>
+</section>
+          <section class="web-block">
+    <div class="web-block-wrapper">
+        <div class="web-link-wrapper menu__link" cursor-mix="" cursor-class="arrow_link">
+                </li>
+                <a class="web-link-title menu__link">Facebook</a>
+            <div class="web-link-img">
+                <svg width="445" height="41" viewBox="0 0 445 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.69572e-06 20.6032L443.379 20.6032M421.094 40L444 20.2118M421.094 1.00003L444 20.7883" stroke="black"/>
+                    </svg>
+            </div>
+        </div>
+        <div class="web-link-wrapper menu__link" cursor-mix="" cursor-class="arrow_link">
+                </li>
+                <a class="web-link-title">Instagram</a>
+            <div class="web-link-img">
+                <svg width="445" height="41" viewBox="0 0 445 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.69572e-06 20.6032L443.379 20.6032M421.094 40L444 20.2118M421.094 1.00003L444 20.7883" stroke="black"/>
+                    </svg>
+            </div>
+        </div>
+
+    </div>
+</section>
+          <section class="copyright-block">
+            <div class="copyright-block-wrapper">
+              <div class="copyright-title">© Renaissance Art Group, 2009-2020</div>
+              <div class="copyright-text">Renaissance Art Group — передовое DIGITAL агентство полного цикла, специализирующееся на брендинге, разработке веб-проектов, проведении онлайн и оффлайн рекламных кампаний и производстве реламных материалов</div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </footer>
+</div>
+
+    <script src="js/app.min.js?_v=20220204124523"></script>
+    <script type="module" src="files/threejs.js?_v=20220204124523"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js?_v=20220204124523" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script>
+const swiper = new Swiper ('.swiper', {
+    speed: 400,
+    initialSlide: 1,
+    autoHeight: false,
+    direction: 'horizontal',
+    loop: true,
+    autoplayStopOnLast: false, // loop false also
+	navigation: {
+    nextEl: '.bt-n',
+    prevEl: '.bt-p',
+  },
+    effect: 'slide',
+    slidesPerGroup: 1,
+    spaceBetween: 30,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    virtualTranslate: false,
+    preloadImages: true,
+  });
+  const swiper3 = new Swiper ('.swiper-3', {
+    speed: 600,
+    parallax: true,
+    initialSlide: 1,
+    autoHeight: false,
+    direction: 'horizontal',
+    loop: true,
+    autoplayStopOnLast: false, // loop false also
+    slidesPerGroup: 1,
+    spaceBetween: 80,
+    slidesPerView: 'auto',
+
+    centeredSlides: true,
+    virtualTranslate: false,
+    preloadImages: true,
+    simulateTouch: false,
+    allowTouchMove: false,
+  });
+
+const swiper2 = new Swiper ('.swiper-2', {
+    speed: 600,
+    parallax: true,
+    initialSlide: 1,
+    autoHeight: false,
+    direction: 'horizontal',
+    loop: true,
+    autoplayStopOnLast: false, // loop false also
+	navigation: {
+    nextEl: '.bt-n',
+    prevEl: '.bt-p',
+  },
+    slidesPerGroup: 1,
+    spaceBetween: 80,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    virtualTranslate: false,
+    preloadImages: true,
+    controller: {
+      control: swiper3,
+  },
+
+  });
+
+
+  //swiper2.controller.control = swiper3;
+  //swiper3.controller.control = swiper2;
+
+let swiper4 = new Swiper ('.swiper-4', {
+    speed: 400,
+    slidesPerView: 1,
+    centeredSlides: true,
+    spaceBetween: 30,
+    slideToClickedSlide: true,
+  });
+
+
+
+
+let swiper5 = new Swiper ('.swiper-5', {
+    speed: 400,
+    slidesPerView: 1,
+    centeredSlides: true,
+    //simulateTouch: false,
+    spaceBetween: 30,
+  });
+
+swiper4.controller.control = swiper5;
+swiper5.controller.control = swiper4;
+
+let swiper6 = new Swiper ('.swiper-6', {
+    speed: 400,
+    slidesPerView: 1,
+    centeredSlides: true,
+    //simulateTouch: false,
+  //  navigation: {
+  //  nextEl: '.bt-n-2',
+  //  prevEl: '.bt-p-2',
+  //},
+    spaceBetween: 60,
+  });
+ 
+
+
+
+  const swiper7 = new Swiper ('.swiper-7', {
+    speed: 400,
+    initialSlide: 1,
+    autoHeight: false,
+    direction: 'horizontal',
+    loop: true,
+    autoplayStopOnLast: false, // loop false also
+    effect: 'slide',
+    slidesPerGroup: 1,
+    spaceBetween: 30,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    virtualTranslate: false,
+    preloadImages: true,
+  });
+
+  const swiper9 = new Swiper ('.swiper-9', {
+    speed: 600,
+    parallax: true,
+    initialSlide: 1,
+    autoHeight: false,
+    direction: 'horizontal',
+    loop: true,
+    autoplayStopOnLast: false, // loop false also
+    slidesPerGroup: 1,
+    spaceBetween: 30,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    virtualTranslate: false,
+    preloadImages: true,
+    simulateTouch: false,
+    allowTouchMove: false,
+  });
+
+const swiper8 = new Swiper ('.swiper-8', {
+    speed: 800,
+    parallax: true,
+    initialSlide: 1,
+    autoHeight: false,
+    direction: 'horizontal',
+    loop: true,
+    autoplayStopOnLast: false, // loop false also
+	navigation: {
+    nextEl: '.bt-n',
+    prevEl: '.bt-p',
+  },
+    slidesPerGroup: 1,
+    spaceBetween: 30,
+    slidesPerView: 'auto',
+    controller: {
+      control: swiper9,
+  },
+    centeredSlides: true,
+    virtualTranslate: false,
+    preloadImages: true,
+  });
+  
+
+
+//  swiper8.controller.control = swiper9;
+//swiper9.controller.control = swiper8;
+
+SmoothScroll({
+    // Время скролла 400 = 0.4 секунды
+    animationTime    : 1000,
+    // Размер шага в пикселях 
+    stepSize         : 100,
+
+    // Дополнительные настройки:
+    
+    // Ускорение 
+    accelerationDelta : 20,  
+    // Максимальное ускорение
+    accelerationMax   : 1,   
+
+    // Поддержка клавиатуры
+    keyboardSupport   : true,  
+    // Шаг скролла стрелками на клавиатуре в пикселях
+    arrowScroll       : 50,
+
+    // Pulse (less tweakable)
+    // ratio of "tail" to "acceleration"
+    pulseAlgorithm   : true,
+    pulseScale       : 4,
+    pulseNormalize   : 1,
+
+    // Поддержка тачпада
+    touchpadSupport   : true,
+})
+
+let inputs = document.querySelectorAll('.input-file-import');
+    Array.prototype.forEach.call(inputs, function (input) {
+      let label = input.nextElementSibling,
+        labelVal = label.querySelector('.input-file-text').innerText;
+  
+      input.addEventListener('change', function (e) {
+        let countFiles = '';
+        if (this.files && this.files.length >= 1)
+          countFiles = this.files.length;
+  
+        if (countFiles)
+          label.querySelector('.input-file-text').innerText = 'Выбрано файлов: ' + countFiles;
+        else
+          label.querySelector('.input-file-text').innerText = labelVal;
+      });
+    });
+
+    var phoneInput = document.querySelector('.phone')
+phoneInput.addEventListener('keydown', function(event) {
+   if( !(event.key == 'ArrowLeft' || event.key == 'ArrowRight' || event.key == 'Backspace' || event.key == 'Tab')) { event.preventDefault() }
+    var mask = '+7 (111) 111-11-11'; // Задаем маску
+ 
+    if (/[0-9\+\ \-\(\)]/.test(event.key)) {
+        // Здесь начинаем сравнивать this.value и mask
+        // к примеру опять же
+        var currentString = this.value;
+        var currentLength = currentString.length;
+        if (/[0-9]/.test(event.key)) {
+            if (mask[currentLength] == '1') {
+                this.value = currentString + event.key;
+            } else {
+                for (var i=currentLength; i<mask.length; i++) {
+                if (mask[i] == '1') {
+                    this.value = currentString + event.key;
+                    break;
+                }
+                currentString += mask[i];
+                }
+            }
+        }
+    } 
+});
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
